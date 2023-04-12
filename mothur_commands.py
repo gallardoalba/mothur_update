@@ -8,13 +8,13 @@ import tempfile
 import json
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
+import re
 
 mothur_commands_folder = "/home/laptop/Galaxy/mothur_analysis/mothur/source/commands"
 mothur_repo = "https://github.com/galaxyproject/tools-iuc/tree/main/tools/mothur"
 prefix_addr = "https://raw.githubusercontent.com/galaxyproject/tools-iuc/main/tools/mothur/"
 xml_folder ="./mothur_files"
 output_files = "./output_files"
-
 
 def dictionary_mothur(path):
     exclude = ["nocommands.cpp","quitcommand.cpp","helpcommand.cpp","newcommandtemplate.cpp","systemcommand.cpp"]
@@ -31,21 +31,42 @@ def dictionary_mothur(path):
             index1 = l.index("(")
             index2 = l.index(",")
             parameter = l[index1+1:index2].strip('"')
+            index3 = l.index(")")
+            options = [x.strip('"') for x in  l[index2+2:index3].split(",")]
+            if options[0] == 'InputTypes':
+                option_type = "data"
+            elif options[0] == "Number":
+                helpfile = open(i.replace("cpp","h"))
+                m = re.search
+                option_datatype = param.attrib["format"].split(",")
+            else:
+                option_datatype = []
+                if 'value' in param.attrib.keys():
+                    option_default = param.attrib["value"]
+                else:
+                    option_default= ""
+                if 'optional' in param.attrib.keys():
+                    option_optional = param.attrib["optional"]
+                else:
+                    option_optional = "false"
+                if 'multiple' in param.attrib.keys():
+                    option_multiple = param.attrib["multiple"]
+                else:
+                    option_multiple = "false"
+                if option_type == "boolean":
+                    if 'checked' in param.attrib.keys():
+                        option_default = param.attrib["checked"]
+                    else:
+                        option_default = ""
+                parameters[option_name] = {"type":option_type,
+                                           "default":option_default,
+                                           "datatype":option_datatype,
+                                           "multiple":option_multiple,
+                                           "optional":option_optional}
             parameters.append(parameter)
         commands[function]=sorted(parameters)
     return(commands)
               
-
-def parse_html(html):
-    elem = BeautifulSoup(html, features="html.parser")
-    text = ''
-    for e in elem.descendants:
-        if isinstance(e, str):
-            text += e.strip()
-        elif e.name in ['a']:
-            text += '\n'
-    return text
-
 def get_xml_urls(url):
     reqs = requests.get(url)
     soup = BeautifulSoup(reqs.text, 'html.parser')
@@ -55,14 +76,12 @@ def get_xml_urls(url):
     filtered = [prefix_addr + x.split("/")[-1] for x in urls if "xml" in x]
     return(filtered)
 
-
 def download(url, folder):
     filename = url.split("/")[-1]
     output_path = os.path.join(folder,filename)
     with open(output_path, "wb") as file:
         response = requests.get(url)
         file.write(response.content)
-
 
 def download_xml_wrappers(mothur_repo):
     urls = get_xml_urls(mothur_repo)
@@ -80,18 +99,71 @@ def dictionary_galaxy(files):
         xml_file = os.path.join(xml_folder,files[i])
         mytree = ET.parse(xml_file)
         myroot = mytree.getroot()
-        parameters = []
+        parameters = {}
         for level in myroot:
             for param in level.findall(".//param"):
-                if 'argument' in param.attrib.keys():
-                    parameters.append(param.attrib["argument"])
-                elif 'name' in param.attrib.keys():
-                    parameters.append(param.attrib["name"])
+                if 'argument' in param.attrib.keys() and 'type' in param.attrib.keys():
+                    option_name = param.attrib["argument"]
+                    option_type = param.attrib["type"]
+                    if option_type == "data":
+                        option_datatype = param.attrib["format"].split(",")
+                    else:
+                        option_datatype = []
+                    if 'value' in param.attrib.keys():
+                        option_default = param.attrib["value"]
+                    else:
+                        option_default= ""
+                    if 'optional' in param.attrib.keys():
+                        option_optional = param.attrib["optional"].capitalize()
+                    else:
+                        option_optional = "false"
+                    if 'multiple' in param.attrib.keys():
+                        option_multiple = param.attrib["multiple"].capitalize()
+                    else:
+                        option_multiple = "false"
+                    if option_type == "boolean":
+                        if 'checked' in param.attrib.keys():
+                            option_default = param.attrib["checked"]
+                    else:
+                        option_default = ""
+                    parameters[option_name] = {"type":option_type,
+                                               "default":option_default,
+                                               "datatype":option_datatype,
+                                               "multiple":option_multiple,
+                                               "optional":option_optional}
 
-        temp_dictionary[command] = sorted(parameters)
+                elif 'name' in param.attrib.keys() and 'type' in param.attrib.keys():
+                    option_name = param.attrib["name"]
+                    option_type = param.attrib["type"]
+                    if option_type == "data":
+                        option_datatype = param.attrib["format"].split(",")
+                    else:
+                        option_datatype = []
+                    if 'value' in param.attrib.keys():
+                        option_default = param.attrib["value"]
+                    else:
+                        option_default= ""
+                    if 'optional' in param.attrib.keys():
+                        option_optional = param.attrib["optional"].capitalize()
+                    else:
+                        option_optional = "false"
+                    if 'multiple' in param.attrib.keys():
+                        option_multiple = param.attrib["multiple"].capitalize()
+                    else:
+                        option_multiple = "false"
+                    if option_type == "boolean":
+                        if 'checked' in param.attrib.keys():
+                            option_default = param.attrib["checked"]
+                    else:
+                        option_default = ""
+                    parameters[option_name] = {"type":option_type,
+                                               "default":option_default,
+                                               "datatype":option_datatype,
+                                               "multiple":option_multiple,
+                                               "optional":option_optional}
+
+        temp_dictionary[command] = parameters
     return(temp_dictionary)
-
-
         
 def main():
     files = download_xml_wrappers(mothur_repo)
@@ -101,12 +173,17 @@ def main():
         os.makedirs(output_files)
     out_json_mothur = os.path.join(output_files,"mothur_commands.json")
     out_json_galaxy = os.path.join(output_files,"galaxy_commands.json")
+    pprint_cmmd = "cat {} | python -m json.tool > {}"
     with open(out_json_mothur,"w") as out:
         json.dump(commands_mothur,out)
+    out_ppjson_mothur = os.path.join(output_files,"mothur_commands_formatted.json")
+    subprocess.Popen(pprint_cmmd.format(out_json_mothur,out_ppjson_mothur), shell=True)
+
     with open(out_json_galaxy,"w") as out:
         json.dump(commands_galaxy,out)
-
-
+    out_ppjson_galaxy = os.path.join(output_files,"galaxy_commands_formatted.json")
+    subprocess.Popen(pprint_cmmd.format(out_json_galaxy,out_ppjson_galaxy), shell=True)
+    
     mothur_keys = commands_mothur.keys()
     galaxy_keys = commands_galaxy.keys()
     ## Missing commands:
@@ -124,8 +201,6 @@ def main():
     output_commons = os.path.join(output_files,"common_commands.txt")
     with open(output_commons,"w") as out:
         for i in list(common_commands): out.write(i+"\n")
-
-
     
 if __name__ == "__main__":
     main()

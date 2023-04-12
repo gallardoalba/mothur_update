@@ -1000,22 +1000,6 @@
         "seed",
         "taxonomy"
     ],
-    "new": [
-        "calc",
-        "column",
-        "distance",
-        "fasta",
-        "groups",
-        "inputdir",
-        "label",
-        "name",
-        "outputdir",
-        "phylip",
-        "processors",
-        "seed",
-        "shared",
-        "timing"
-    ],
     "sff.multiple": [
         "allfiles",
         "bdiffs",
@@ -1785,7 +1769,6 @@
         "subsample",
         "withreplacement"
     ],
-    "system": [],
     "set.logfile": [
         "append",
         "inputdir",

@@ -1,10 +1,10 @@
 make.design
 list.otulabels
 merge.files
-parse.list
-remove.otulabels
+tool_data_table_conf.xml.sa
 mimarks.attributes
 macros
-get.otulabels
+parse.list
 taxonomy-to-krona
-tool_data_table_conf.xml.sa
+remove.otulabels
+get.otulabels
