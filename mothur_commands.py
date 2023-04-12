@@ -9,6 +9,7 @@ import json
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 import re
+from itertools import combinations
 
 mothur_commands_folder = "/home/laptop/Galaxy/mothur_analysis/mothur/source/commands"
 mothur_repo = "https://github.com/galaxyproject/tools-iuc/tree/main/tools/mothur"
@@ -17,55 +18,80 @@ xml_folder ="./mothur_files"
 output_files = "./output_files"
 
 def dictionary_mothur(path):
+    temp_dictionary = {}
     exclude = ["nocommands.cpp","quitcommand.cpp","helpcommand.cpp","newcommandtemplate.cpp","systemcommand.cpp"]
     files = [os.path.join(mothur_commands_folder,x) for x in os.listdir(path) if "cpp" in x and x not in exclude]
     raw_outputs = ""
-    commands = {}
     for i in files:
         rawdata = open(i).readlines()
-        function = [x for x in rawdata if 'helpString += "The' in x][0].strip().split(" ")[3]
+        command = [x for x in rawdata if 'helpString += "The' in x][0].strip().split(" ")[3]
         lines = [x for x in rawdata if 'CommandParameter ' in x]
         raw_parameters = [x for x in open(i).readlines() if 'CommandParameter ' in x]
-        parameters = []
+        parameters = {}
+        var_types = {"\tint":"integer","\tfloat":"float","\tdouble":"float"}
         for l in raw_parameters:
             index1 = l.index("(")
             index2 = l.index(",")
-            parameter = l[index1+1:index2].strip('"')
+            option_name = l[index1+1:index2].strip('"')
             index3 = l.index(")")
-            options = [x.strip('"') for x in  l[index2+2:index3].split(",")]
+            options = [x.strip(' \"') for x in  l[index2+2:index3].split(",")]
+            options_selector = ""
+            option_datatype = []
             if options[0] == 'InputTypes':
                 option_type = "data"
+                option_datatype = [x for x in list(set(options[3].split("-")+options[4].split("-"))) if x != "none"]
             elif options[0] == "Number":
-                helpfile = open(i.replace("cpp","h"))
-                m = re.search
-                option_datatype = param.attrib["format"].split(",")
+                if len(option_name) > 3:
+                    pattern = "|".join([option_name[x:y] for x, y in combinations(range(len(option_name) + 1), r = 2) if len(option_name[x:y]) >3 ])
+                else:
+                    pattern = option_name
+                rexp = re.compile(r".*{}.*".format(pattern))
+                header_file = i.replace("cpp","h")
+                if os.path.isfile(header_file):
+                    with open(header_file) as tmp:
+                        for line in tmp:
+                            match = re.findall(rexp,line)
+                            if match and line.split(" ")[0] in var_types.keys():
+                                option_type = var_types[line.split(" ")[0]]
+                                break
+                else:
+                    option_type = ""
+            elif options[0] == "String":  option_type="text"
+            elif options[0] == "Boolean": option_type="boolean"
+            elif options[0] == "Multiple":
+                option_type="select"
+                options_selector = options[1].split("-")
             else:
-                option_datatype = []
-                if 'value' in param.attrib.keys():
-                    option_default = param.attrib["value"]
-                else:
-                    option_default= ""
-                if 'optional' in param.attrib.keys():
-                    option_optional = param.attrib["optional"]
-                else:
-                    option_optional = "false"
-                if 'multiple' in param.attrib.keys():
-                    option_multiple = param.attrib["multiple"]
-                else:
-                    option_multiple = "false"
-                if option_type == "boolean":
-                    if 'checked' in param.attrib.keys():
-                        option_default = param.attrib["checked"]
-                    else:
-                        option_default = ""
-                parameters[option_name] = {"type":option_type,
-                                           "default":option_default,
-                                           "datatype":option_datatype,
-                                           "multiple":option_multiple,
-                                           "optional":option_optional}
-            parameters.append(parameter)
-        commands[function]=sorted(parameters)
-    return(commands)
+                option_type = ""
+            option_default = options[2]
+            inverse = {"false":"true","true":"false","":""}
+            # This needs to be checked
+            if len(options) >= 9:
+                print(options)
+                option_optional = inverse[options[8].strip()]
+                option_multiple = options[7]
+                print(option_optional)
+                print(option_multiple)
+
+            else:
+                print(options)
+                option_optional = inverse[options[7].strip()]
+                option_multiple = options[6]
+                print(option_optional)
+                print(option_multiple)
+
+
+            parameters[option_name] = {"type":option_type,
+                                       "default":option_default,
+                                       "datatype":option_datatype,
+                                       "multiple":option_multiple,
+                                       "optional":option_optional,
+                                       "selector":options_selector
+            }
+            
+
+        temp_dictionary[command] = parameters
+    return(temp_dictionary)
               
 def get_xml_urls(url):
     reqs = requests.get(url)
