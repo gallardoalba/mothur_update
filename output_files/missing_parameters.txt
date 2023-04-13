@@ -1,0 +1,408 @@
+
+[x] Command: chimera.perseus
+[x] Differences: ['removechimeras', 'count']
+
+
+[x] Command: chimera.pintail
+[x] Differences: ['removechimeras']
+
+
+[x] Command: chimera.slayer
+[x] Differences: ['removechimeras', 'realign', 'ksize']
+
+
+[x] Command: chimera.uchime
+[x] Differences: ['removechimeras', 'uchime', 'strand']
+
+
+[x] Command: chimera.vsearch
+[x] Differences: ['uchimealns', 'removechimeras', 'vsearch']
+
+
+[x] Command: chop.seqs
+[x] Differences: ['keepn', 'fastq', 'format', 'qfile']
+
+
+[x] Command: classify.otu
+[x] Differences: ['threshold']
+
+
+[x] Command: classify.seqs
+[x] Differences: ['shortcuts', 'group']
+
+
+[x] Command: classify.tree
+[x] Differences: ['output', 'count']
+
+
+[x] Command: clearcut
+[x] Differences: ['stdout', 'verbose', 'kimura', 'jukes', 'rseed', 'DNA', 'version', 'quiet', 'protein']
+
+
+[x] Command: cluster
+[x] Differences: ['vsearch', 'showabund', 'timing']
+
+
+[x] Command: cluster.classic
+[x] Differences: ['phylip']
+
+
+[x] Command: cluster.fragments
+[x] Differences: ['name']
+
+
+[x] Command: cluster.split
+[x] Differences: ['showabund', 'count', 'vsearch', 'timing', 'name', 'file', 'dist', 'islist']
+
+
+[x] Command: collect.shared
+[x] Differences: ['all', 'shared']
+
+
+[x] Command: collect.single
+[x] Differences: ['sabund', 'list', 'size', 'rabund', 'alpha', 'shared']
+
+
+[x] Command: consensus.seqs
+[x] Differences: ['list']
+
+
+[x] Command: cooccurrence
+[x] Differences: ['shared']
+
+
+[x] Command: corr.axes
+[x] Differences: ['relabund', 'shared']
+
+
+[x] Command: count.groups
+[x] Differences: ['count', 'shared']
+
+
+[x] Command: count.seqs
+[x] Differences: ['count', 'compress', 'shared']
+
+
+[x] Command: create.database
+[x] Differences: ['count', 'list', 'repname', 'relabund', 'shared']
+
+
+[x] Command: deunique.seqs
+[x] Differences: ['count', 'name']
+
+
+[x] Command: deunique.tree
+[x] Differences: ['name']
+
+
+[x] Command: dist.seqs
+[x] Differences: ['compress', 'oldfasta', 'fitcalc', 'column']
+
+
+[x] Command: dist.shared
+[x] Differences: ['withreplacement', 'mode', 'shared']
+
+
+[x] Command: fastq.info
+[x] Differences: ['fasta', 'checkorient', 'qfile', 'file', 'group']
+
+
+[x] Command: filter.shared
+[x] Differences: ['accnos']
+
+
+[x] Command: get.communitytype
+[x] Differences: ['withreplacement', 'shared']
+
+
+[x] Command: get.coremicrobiome
+[x] Differences: ['relabund', 'shared']
+
+
+[x] Command: get.dists
+[x] Differences: ['phylip', 'column']
+
+
+[x] Command: get.groups
+[x] Differences: ['fasta', 'count', 'taxonomy', 'design', 'group', 'sets', 'name', 'phylip', 'list', 'column', 'shared', 'flow']
+
+
+[x] Command: get.label
+[x] Differences: ['list', 'sabund', 'rabund']
+
+
+[x] Command: get.lineage
+[x] Differences: ['fasta', 'name', 'label', 'alignreport', 'constaxonomy', 'group']
+
+
+[x] Command: get.mimarkspackage
+[x] Differences: ['file', 'oligos', 'group']
+
+
+[x] Command: get.otulist
+[x] Differences: ['list']
+
+
+[x] Command: get.oturep
+[x] Differences: ['cutoff', 'count', 'name', 'precision', 'phylip', 'list', 'rename', 'weighted', 'column', 'method']
+
+
+[x] Command: get.rabund
+[x] Differences: ['list', 'sabund', 'groups', 'shared']
+
+
+[x] Command: get.relabund
+[x] Differences: ['shared']
+
+
+[x] Command: get.sabund
+[x] Differences: ['list', 'rabund']
+
+
+[x] Command: get.seqs
+[x] Differences: ['fasta', 'count', 'taxonomy', 'format', 'qfile', 'fastq', 'name', 'contigsreport', 'accnos2', 'alignreport', 'list', 'group']
+
+
+[x] Command: get.sharedseqs
+[x] Differences: ['count', 'sharedgroups', 'list', 'uniquegroups', 'shared']
+
+
+[x] Command: heatmap.bin
+[x] Differences: ['sabund', 'list', 'rabund', 'relabund', 'shared']
+
+
+[x] Command: heatmap.sim
+[x] Differences: ['phylip', 'shared', 'column']
+
+
+[x] Command: homova
+[x] Differences: ['phylip']
+
+
+[x] Command: indicator
+[x] Differences: ['shared', 'relabund', 'iters']
+
+
+[x] Command: lefse
+[x] Differences: ['classes', 'clr', 'subclass', 'multiclass', 'wilcsamename', 'pairwise', 'shared']
+
+
+[x] Command: libshuff
+[x] Differences: ['form', 'phylip']
+
+
+[x] Command: list.seqs
+[x] Differences: ['fasta', 'count', 'taxonomy', 'qfile', 'fastq', 'name', 'contigsreport', 'alignreport', 'list', 'group']
+
+
+[x] Command: make.biom
+[x] Differences: ['output', 'reftaxonomy', 'relabund', 'shared']
+
+
+[x] Command: make.contigs
+[x] Differences: ['checkorient', 'rfastq', 'rqfile', 'file', 'ffasta', 'deltaq', 'maxee', 'maxlength', 'fqfile', 'qfile', 'trimoverlap', 'maxhomop', 'allfiles', 'insert', 'maxambig', 'ksize', 'format', 'rfasta', 'ffastq']
+
+
+[x] Command: make.group
+[x] Differences: ['output', 'groups', 'format']
+
+
+[x] Command: make.lefse
+[x] Differences: ['relabund', 'groups', 'shared']
+
+
+[x] Command: make.lookup
+[x] Differences: ['reference']
+
+
+[x] Command: make.shared
+[x] Differences: ['biom', 'list', 'keepzeroes', 'count']
+
+
+[x] Command: make.sra
+[x] Differences: ['file']
+
+
+[x] Command: mantel
+[x] Differences: ['phylip2', 'phylip1']
+
+
+[x] Command: merge.count
+[x] Differences: ['output', 'count']
+
+
+[x] Command: merge.groups
+[x] Differences: ['count', 'shared', 'design']
+
+
+[x] Command: merge.sfffiles
+[x] Differences: ['sff', 'file', 'keytrim', 'output']
+
+
+[x] Command: merge.taxsummary
+[x] Differences: ['output']
+
+
+[x] Command: metastats
+[x] Differences: ['clr', 'shared']
+
+
+[x] Command: nmds
+[x] Differences: ['phylip']
+
+
+[x] Command: normalize.shared
+[x] Differences: ['norm', 'relabund', 'shared']
+
+
+[x] Command: otu.association
+[x] Differences: ['relabund', 'shared']
+
+
+[x] Command: otu.hierarchy
+[x] Differences: ['count', 'taxonomy', 'asvlist', 'label', 'list']
+
+
+[x] Command: pairwise.seqs
+[x] Differences: ['ksize', 'fitcalc', 'compress', 'column', 'oldfasta', 'kmercutoff']
+
+
+[x] Command: parsimony
+[x] Differences: ['random']
+
+
+[x] Command: pca
+[x] Differences: ['relabund', 'shared']
+
+
+[x] Command: pcr.seqs
+[x] Differences: ['count', 'taxonomy', 'checkorient', 'name', 'group']
+
+
+[x] Command: phylo.diversity
+[x] Differences: ['sampledepth']
+
+
+[x] Command: phylotype
+[x] Differences: ['count']
+
+
+[x] Command: pre.cluster
+[x] Differences: ['count', 'indel_prob', 'align', 'delta', 'clump', 'error_rate', 'method', 'alpha', 'max_indels', 'error_dist']
+
+
+[x] Command: primer.design
+[x] Differences: ['list']
+
+
+[x] Command: rarefaction.shared
+[x] Differences: ['groupmode', 'withreplacement', 'freq', 'subsample', 'shared']
+
+
+[x] Command: rarefaction.single
+[x] Differences: ['groupmode', 'sabund', 'groups', 'list', 'rabund', 'alpha', 'shared']
+
+
+[x] Command: remove.groups
+[x] Differences: ['fasta', 'count', 'taxonomy', 'design', 'group', 'accnos', 'sets', 'name', 'phylip', 'list', 'column', 'shared']
+
+
+[x] Command: remove.lineage
+[x] Differences: ['fasta', 'name', 'label', 'alignreport', 'constaxonomy', 'group']
+
+
+[x] Command: remove.otus
+[x] Differences: ['otucorr', 'list', 'corraxes', 'constaxonomy', 'shared']
+
+
+[x] Command: remove.rare
+[x] Differences: ['rabund', 'list', 'sabund', 'shared']
+
+
+[x] Command: remove.seqs
+[x] Differences: ['fasta', 'count', 'taxonomy', 'format', 'qfile', 'fastq', 'name', 'contigsreport', 'alignreport', 'list', 'group']
+
+
+[x] Command: rename.seqs
+[x] Differences: ['count', 'taxonomy', 'fastq', 'delim', 'map', 'file', 'list']
+
+
+[x] Command: reverse.seqs
+[x] Differences: ['qfile']
+
+
+[x] Command: screen.seqs
+[x] Differences: ['maxn', 'name', 'group']
+
+
+[x] Command: sens.spec
+[x] Differences: ['list', 'name', 'phylip', 'column']
+
+
+[x] Command: seq.error
+[x] Differences: ['fasta', 'qfile', 'name', 'report', 'reference', 'aligned']
+
+
+[x] Command: sffinfo
+[x] Differences: ['checkorient', 'group']
+
+
+[x] Command: shhh.flows
+[x] Differences: ['file']
+
+
+[x] Command: sort.seqs
+[x] Differences: ['fasta', 'taxonomy', 'qfile', 'name', 'flow']
+
+
+[x] Command: split.abund
+[x] Differences: ['list', 'count', 'name']
+
+
+[x] Command: split.groups
+[x] Differences: ['list', 'fastq', 'format', 'flow']
+
+
+[x] Command: sub.sample
+[x] Differences: ['fasta', 'tree', 'group', 'withreplacement', 'constaxonomy', 'sabund', 'name', 'list', 'rabund', 'shared']
+
+
+[x] Command: summary.seqs
+[x] Differences: ['summary', 'contigsreport', 'alignreport']
+
+
+[x] Command: summary.shared
+[x] Differences: ['withreplacement', 'shared']
+
+
+[x] Command: summary.single
+[x] Differences: ['withreplacement', 'sabund', 'list', 'rabund', 'alpha', 'shared']
+
+
+[x] Command: tree.shared
+[x] Differences: ['cutoff', 'count', 'withreplacement', 'phylip', 'precision', 'column', 'shared']
+
+
+[x] Command: trim.flows
+[x] Differences: ['floworder', 'allfiles', 'checkorient']
+
+
+[x] Command: trim.seqs
+[x] Differences: ['name']
+
+
+[x] Command: unifrac.unweighted
+[x] Differences: ['withreplacement']
+
+
+[x] Command: unifrac.weighted
+[x] Differences: ['withreplacement']
+
+
+[x] Command: unique.seqs
+[x] Differences: ['output', 'count', 'name']
+
+
+[x] Command: venn
+[x] Differences: ['list', 'shared']
+

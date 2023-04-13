@@ -10,11 +10,13 @@ from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 import re
 from itertools import combinations
+from galaxy.util.xml_macros import load
 
 mothur_commands_folder = "/home/laptop/Galaxy/mothur_analysis/mothur/source/commands"
-mothur_repo = "https://github.com/galaxyproject/tools-iuc/tree/main/tools/mothur"
-prefix_addr = "https://raw.githubusercontent.com/galaxyproject/tools-iuc/main/tools/mothur/"
-xml_folder ="./mothur_files"
+#mothur_commands_folder = "/home/laptop/Galaxy/tools-iuc/tools/mothur"
+#mothur_repo = "https://github.com/galaxyproject/tools-iuc/tree/main/tools/mothur"
+#prefix_addr = "https://raw.githubusercontent.com/galaxyproject/tools-iuc/main/tools/mothur/"
+xml_folder = "/home/laptop/Galaxy/tools-iuc/tools/mothur"
 output_files = "./output_files"
 
 def dictionary_mothur(path):
@@ -96,7 +98,7 @@ def dictionary_mothur(path):
 
         temp_dictionary[command] = parameters
     return(temp_dictionary)
-              
+"""              
 def get_xml_urls(url):
     reqs = requests.get(url)
     soup = BeautifulSoup(reqs.text, 'html.parser')
@@ -121,13 +123,13 @@ def download_xml_wrappers(mothur_repo):
             download(url,xml_folder)
     files = os.listdir(xml_folder)
     return(files)
-
+"""
 def dictionary_galaxy(files):
     temp_dictionary = {}
     for i in range(len(files)):
         command = files[i][:-4]
         xml_file = os.path.join(xml_folder,files[i])
-        mytree = ET.parse(xml_file)
+        mytree = load(xml_file)
         myroot = mytree.getroot()
         parameters = {}
         for level in myroot:
@@ -196,7 +198,7 @@ def dictionary_galaxy(files):
     return(temp_dictionary)
         
 def main():
-    files = download_xml_wrappers(mothur_repo)
+    files = [x for x in os.listdir(xml_folder) if ".xml" in x]
     commands_mothur = dictionary_mothur(mothur_commands_folder)
     #commands_mothur_sorted = json.dumps(commands_mothur,sort_keys=True)
     commands_galaxy = dictionary_galaxy(files)
@@ -233,6 +235,19 @@ def main():
     output_commons = os.path.join(output_files,"common_commands.txt")
     with open(output_commons,"w") as out:
         for i in list(common_commands): out.write(i+"\n")
-    
+    #Compare paraters
+    missing_parameters = os.path.join(output_files,"missing_parameters.txt")
+    exclude = ["inputdir","outputdir","seed","processors"]
+    with open(missing_parameters,"w") as out:
+        for command in sorted(common_commands):
+            params_mothur = [x for x in sorted(list(commands_mothur[command].keys())) if x not in exclude]
+            params_galaxy = sorted(list(commands_galaxy[command].keys()))
+            diff = list(set(params_mothur) - set(params_galaxy))
+
+            if diff:
+                out.write("\n[x] Command: {}\n".format(command))
+                out.write("[x] Differences: {}\n\n".format(diff))
+
+
 if __name__ == "__main__":
     main()

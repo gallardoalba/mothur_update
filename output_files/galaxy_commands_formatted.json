@@ -23,6 +23,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "unique.seqs": {
@@ -41,6 +47,12 @@
         "format": {
             "type": "select",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -82,6 +94,36 @@
             "multiple": "false",
             "optional": "True"
         },
+        "method": {
+            "type": "select",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "metric": {
+            "type": "select",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "initialize": {
+            "type": "select",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "delta": {
+            "type": "float",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "iters": {
+            "type": "integer",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
         "cutoff": {
             "type": "float",
             "default": "",
@@ -95,6 +137,12 @@
             "optional": "True"
         },
         "sim": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
             "type": "boolean",
             "default": "false",
             "multiple": "false",
@@ -118,6 +166,12 @@
             "type": "select",
             "default": "",
             "multiple": "True",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
             "optional": "false"
         }
     },
@@ -193,6 +247,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "remove.groups": {
@@ -255,6 +315,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "collect.shared": {
@@ -285,6 +351,12 @@
         "freq": {
             "type": "float",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -335,6 +407,12 @@
         "fontsize": {
             "type": "integer",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -393,6 +471,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "amova": {
@@ -423,6 +507,12 @@
         "sets": {
             "type": "text",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -523,6 +613,12 @@
             "default": "true",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "get.relabund": {
@@ -547,6 +643,12 @@
         "scale": {
             "type": "select",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -580,6 +682,12 @@
             "type": "select",
             "default": "",
             "multiple": "False",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
             "optional": "false"
         }
     },
@@ -649,11 +757,23 @@
             "default": "true",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "biom.info": {
         "biom": {
             "type": "data",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "format": {
+            "type": "select",
             "default": "",
             "multiple": "false",
             "optional": "false"
@@ -673,6 +793,24 @@
         "relabund": {
             "type": "boolean",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "output": {
+            "type": "select",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "printlevel": {
+            "type": "integer",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -749,6 +887,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "get.lineage": {
@@ -829,6 +973,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "create.database": {
@@ -867,6 +1017,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "chimera.bellerophon": {
@@ -888,6 +1044,12 @@
             "multiple": "false",
             "optional": "false"
         },
+        "removechimeras": {
+            "type": "boolean",
+            "default": "true",
+            "multiple": "false",
+            "optional": "false"
+        },
         "window": {
             "type": "integer",
             "default": "",
@@ -899,6 +1061,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "merge.count": {
@@ -906,6 +1074,12 @@
             "type": "data",
             "default": "",
             "multiple": "True",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
             "optional": "false"
         }
     },
@@ -919,6 +1093,12 @@
         "metric": {
             "type": "boolean",
             "default": "true",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -977,6 +1157,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "pre.cluster": {
@@ -1031,6 +1217,12 @@
         "topdown": {
             "type": "boolean",
             "default": "true",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -1107,6 +1299,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "tool_data_table_conf.xml.sa": {},
@@ -1132,6 +1330,12 @@
         "iters": {
             "type": "integer",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -1196,6 +1400,12 @@
             "default": "true",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "shhh.seqs": {
@@ -1222,6 +1432,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "merge.sfffiles": {
@@ -1229,6 +1445,12 @@
             "type": "data",
             "default": "",
             "multiple": "True",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
             "optional": "false"
         }
     },
@@ -1376,6 +1598,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "libshuff": {
@@ -1426,6 +1654,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "count.groups": {
@@ -1452,6 +1686,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "dist.shared": {
@@ -1500,6 +1740,12 @@
         "output": {
             "type": "select",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -1558,6 +1804,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "cluster.split": {
@@ -1587,6 +1839,36 @@
         },
         "phylip": {
             "type": "data",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "method": {
+            "type": "select",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "metric": {
+            "type": "select",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "initialize": {
+            "type": "select",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "delta": {
+            "type": "float",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "iters": {
+            "type": "integer",
             "default": "",
             "multiple": "false",
             "optional": "false"
@@ -1644,6 +1926,12 @@
             "default": "true",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "metastats": {
@@ -1688,6 +1976,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "homova": {
@@ -1719,6 +2013,12 @@
             "type": "select",
             "default": "",
             "multiple": "True",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
             "optional": "false"
         }
     },
@@ -1764,6 +2064,24 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "output": {
+            "type": "select",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "printlevel": {
+            "type": "integer",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "taxonomy-to-krona": {
@@ -1798,6 +2116,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "get.coremicrobiome": {
@@ -1836,6 +2160,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "get.mimarkspackage": {
@@ -1858,6 +2188,12 @@
             "optional": "false"
         },
         "requiredonly": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
             "type": "boolean",
             "default": "false",
             "multiple": "false",
@@ -1917,6 +2253,12 @@
             "type": "select",
             "default": "",
             "multiple": "True",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
             "optional": "false"
         }
     },
@@ -1992,6 +2334,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "chimera.pintail": {
@@ -2052,6 +2400,12 @@
         "increment": {
             "type": "integer",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -2164,6 +2518,12 @@
             "default": "true",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "parse.list": {
@@ -2190,6 +2550,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "remove.lineage": {
@@ -2270,6 +2636,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "get.sharedseqs": {
@@ -2326,6 +2698,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "classify.tree": {
@@ -2358,6 +2736,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "make.lookup": {
@@ -2406,6 +2790,12 @@
         "threshold": {
             "type": "integer",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -2458,6 +2848,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "trim.seqs": {
@@ -2640,6 +3036,12 @@
             "default": "false",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "get.rabund": {
@@ -2666,6 +3068,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "deunique.tree": {
@@ -2678,6 +3086,12 @@
         "names": {
             "type": "data",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -2700,6 +3114,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "sort.seqs": {
@@ -2752,6 +3172,12 @@
             "optional": "True"
         },
         "large": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
             "type": "boolean",
             "default": "false",
             "multiple": "false",
@@ -2830,6 +3256,24 @@
             "default": "false",
             "multiple": "false",
             "optional": "false"
+        },
+        "output": {
+            "type": "select",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "printlevel": {
+            "type": "integer",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "split.groups": {
@@ -2862,6 +3306,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "clearcut": {
@@ -2930,6 +3380,12 @@
             "default": "false",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "collect.single": {
@@ -2962,6 +3418,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "phylotype": {
@@ -2988,6 +3450,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "split.abund": {
@@ -3044,6 +3512,12 @@
             "default": "false",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "macros": {
@@ -3092,6 +3566,12 @@
         "savelog": {
             "type": "boolean",
             "default": "false",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "removechimeras": {
+            "type": "boolean",
+            "default": "true",
             "multiple": "false",
             "optional": "false"
         }
@@ -3156,12 +3636,30 @@
             "default": "true",
             "multiple": "false",
             "optional": "false"
+        },
+        "output_sel": {
+            "type": "select",
+            "default": "",
+            "multiple": "True",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "degap.seqs": {
         "fasta": {
             "type": "data",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -3208,6 +3706,12 @@
             "default": "false",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "get.otulabels": {
@@ -3234,6 +3738,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "remove.seqs": {
@@ -3302,6 +3812,12 @@
             "default": "true",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "fastq.info": {
@@ -3364,6 +3880,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "get.otulist": {
@@ -3382,6 +3904,12 @@
         "sort": {
             "type": "select",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -3420,6 +3948,12 @@
         "freq": {
             "type": "float",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -3580,6 +4114,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "otu.hierarchy": {
@@ -3606,6 +4146,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "rarefaction.shared": {
@@ -3680,6 +4226,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "pairwise.seqs": {
@@ -3746,6 +4298,12 @@
         "output": {
             "type": "select",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -3834,6 +4392,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "remove.otus": {
@@ -3860,6 +4424,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "make.group": {
@@ -3884,6 +4454,12 @@
         "group": {
             "type": "text",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -3972,6 +4548,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "classify.seqs": {
@@ -4088,6 +4670,24 @@
             "default": "false",
             "multiple": "false",
             "optional": "false"
+        },
+        "output": {
+            "type": "select",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "printlevel": {
+            "type": "integer",
+            "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "get.sabund": {
@@ -4108,6 +4708,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "indicator": {
@@ -4146,6 +4752,12 @@
             "default": "",
             "multiple": "True",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "corr.axes": {
@@ -4196,6 +4808,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "chimera.perseus": {
@@ -4236,6 +4854,12 @@
             "optional": "false"
         },
         "dereplicate": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
             "type": "boolean",
             "default": "false",
             "multiple": "false",
@@ -4380,6 +5004,12 @@
             "default": "false",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "merge.taxsummary": {
@@ -4387,6 +5017,12 @@
             "type": "data",
             "default": "",
             "multiple": "True",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
             "optional": "false"
         }
     },
@@ -4480,6 +5116,12 @@
             "default": "false",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "unifrac.unweighted": {
@@ -4554,6 +5196,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "get.otus": {
@@ -4604,6 +5252,12 @@
             "default": "",
             "multiple": "False",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "heatmap.sim": {
@@ -4660,6 +5314,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "list.otulabels": {
@@ -4679,6 +5339,12 @@
             "type": "select",
             "default": "",
             "multiple": "True",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
             "optional": "false"
         }
     },
@@ -4716,6 +5382,12 @@
         "placement": {
             "type": "select",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -4756,6 +5428,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "bin.seqs": {
@@ -4794,12 +5472,24 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "mimarks.attributes": {
         "biosample_in": {
             "type": "data",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -4834,6 +5524,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "remove.otulabels": {
@@ -4860,6 +5556,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "make.sra": {
@@ -4982,10 +5684,16 @@
             "default": "true",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "make.shared": {
-        "infile": {
+        "shared": {
             "type": "select",
             "default": "",
             "multiple": "false",
@@ -5014,6 +5722,12 @@
             "default": "",
             "multiple": "True",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "list.seqs": {
@@ -5026,6 +5740,12 @@
         "input": {
             "type": "data",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -5060,6 +5780,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "get.seqs": {
@@ -5128,6 +5854,12 @@
             "default": "true",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "make.biom": {
@@ -5184,6 +5916,12 @@
             "default": "",
             "multiple": "True",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "remove.dists": {
@@ -5208,6 +5946,12 @@
         "accnos": {
             "type": "data",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -5278,6 +6022,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "deunique.seqs": {
@@ -5298,6 +6048,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "merge.files": {
@@ -5311,6 +6067,12 @@
             "type": "data",
             "default": "",
             "multiple": "True",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
             "optional": "false"
         }
     },
@@ -5368,6 +6130,12 @@
             "default": "true",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "make.fastq": {
@@ -5394,6 +6162,12 @@
             "default": "",
             "multiple": "True",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "dist.seqs": {
@@ -5426,6 +6200,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "chimera.ccode": {
@@ -5453,6 +6233,12 @@
             "multiple": "false",
             "optional": "false"
         },
+        "removechimeras": {
+            "type": "boolean",
+            "default": "true",
+            "multiple": "false",
+            "optional": "false"
+        },
         "source2": {
             "type": "select",
             "default": "",
@@ -5474,6 +6260,12 @@
         "numwanted": {
             "type": "integer",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -5501,6 +6293,12 @@
             "type": "select",
             "default": "",
             "multiple": "True",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
             "optional": "false"
         }
     },
@@ -5564,6 +6362,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "consensus.seqs": {
@@ -5608,6 +6412,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "otu.association": {
@@ -5646,6 +6456,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "pca": {
@@ -5670,6 +6486,12 @@
         "metric": {
             "type": "boolean",
             "default": "true",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -5740,6 +6562,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "align.seqs": {
@@ -5761,7 +6589,7 @@
             "multiple": "false",
             "optional": "false"
         },
-        "method": {
+        "search": {
             "type": "select",
             "default": "",
             "multiple": "false",
@@ -5820,6 +6648,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "cluster.fragments": {
@@ -5852,6 +6686,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "cooccurrence": {
@@ -5890,6 +6730,12 @@
             "default": "",
             "multiple": "True",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "remove.rare": {
@@ -5940,6 +6786,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "get.dists": {
@@ -5958,6 +6810,12 @@
         "accnos": {
             "type": "data",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -5992,6 +6850,12 @@
             "default": "false",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "get.group": {
@@ -6000,12 +6864,24 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "reverse.seqs": {
         "fasta": {
             "type": "data",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -6088,6 +6964,12 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "summary.shared": {
@@ -6150,12 +7032,24 @@
             "default": "",
             "multiple": "false",
             "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "get.label": {
         "otu": {
             "type": "data",
             "default": "",
+            "multiple": "false",
+            "optional": "false"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
             "multiple": "false",
             "optional": "false"
         }
@@ -6202,6 +7096,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     },
     "chimera.check": {
@@ -6246,6 +7146,12 @@
             "default": "",
             "multiple": "false",
             "optional": "True"
+        },
+        "savelog": {
+            "type": "boolean",
+            "default": "false",
+            "multiple": "false",
+            "optional": "false"
         }
     }
 }
