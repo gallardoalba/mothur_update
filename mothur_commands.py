@@ -36,10 +36,10 @@ def dictionary_mothur(path):
             index3 = l.index(")")
             options = [x.strip(' \"') for x in  l[index2+2:index3].split(",")]
             options_selector = ""
-            option_datatype = []
+            #option_datatype = []
             if options[0] == 'InputTypes':
                 option_type = "data"
-                option_datatype = [x for x in list(set(options[3].split("-")+options[4].split("-"))) if x != "none"]
+                #option_datatype = [x for x in list(set(options[3].split("-")+options[4].split("-"))) if x != "none"]
             elif options[0] == "Number":
                 if len(option_name) > 3:
                     pattern = "|".join([option_name[x:y] for x, y in combinations(range(len(option_name) + 1), r = 2) if len(option_name[x:y]) >3 ])
@@ -66,29 +66,33 @@ def dictionary_mothur(path):
             option_default = options[2]
             inverse = {"false":"true","true":"false","":""}
             # This needs to be checked
-            if len(options) >= 9:
-                print(options)
+            if len(options) == 10:
+                option_optional = inverse[options[9].strip()]
+                option_multiple = options[8]
+            elif len(options) == 9:
                 option_optional = inverse[options[8].strip()]
                 option_multiple = options[7]
-                print(option_optional)
-                print(option_multiple)
-
+            elif option_name == "processors":
+                option_optional = "true"
+                option_multiple = "false"
             else:
-                print(options)
-                option_optional = inverse[options[7].strip()]
-                option_multiple = options[6]
-                print(option_optional)
-                print(option_multiple)
+                raise Exception("[x] Error during paramter parsing")
 
-
-            parameters[option_name] = {"type":option_type,
-                                       "default":option_default,
-                                       "datatype":option_datatype,
-                                       "multiple":option_multiple,
-                                       "optional":option_optional,
-                                       "selector":options_selector
-            }
-            
+            if options_selector != "":
+                parameters[option_name] = {"type":option_type,
+                                           "default":option_default,
+                                           #"datatype":option_datatype,
+                                           "multiple":option_multiple,
+                                           "optional":option_optional,
+                                           "selector":options_selector
+                }
+            else:
+                parameters[option_name] = {"type":option_type,
+                                           "default":option_default,
+                                           #"datatype":option_datatype,
+                                           "multiple":option_multiple,
+                                           "optional":option_optional,
+                }
 
         temp_dictionary[command] = parameters
     return(temp_dictionary)
@@ -131,10 +135,10 @@ def dictionary_galaxy(files):
                 if 'argument' in param.attrib.keys() and 'type' in param.attrib.keys():
                     option_name = param.attrib["argument"]
                     option_type = param.attrib["type"]
-                    if option_type == "data":
-                        option_datatype = param.attrib["format"].split(",")
-                    else:
-                        option_datatype = []
+                    #if option_type == "data":
+                    #    option_datatype = param.attrib["format"].split(",")
+                    #else:
+                    #    option_datatype = []
                     if 'value' in param.attrib.keys():
                         option_default = param.attrib["value"]
                     else:
@@ -154,17 +158,17 @@ def dictionary_galaxy(files):
                         option_default = ""
                     parameters[option_name] = {"type":option_type,
                                                "default":option_default,
-                                               "datatype":option_datatype,
+                                               #"datatype":option_datatype,
                                                "multiple":option_multiple,
                                                "optional":option_optional}
 
                 elif 'name' in param.attrib.keys() and 'type' in param.attrib.keys():
                     option_name = param.attrib["name"]
                     option_type = param.attrib["type"]
-                    if option_type == "data":
-                        option_datatype = param.attrib["format"].split(",")
-                    else:
-                        option_datatype = []
+                    #if option_type == "data":
+                    #    option_datatype = param.attrib["format"].split(",")
+                    #else:
+                    #    option_datatype = []
                     if 'value' in param.attrib.keys():
                         option_default = param.attrib["value"]
                     else:
@@ -184,7 +188,7 @@ def dictionary_galaxy(files):
                         option_default = ""
                     parameters[option_name] = {"type":option_type,
                                                "default":option_default,
-                                               "datatype":option_datatype,
+                                               #"datatype":option_datatype,
                                                "multiple":option_multiple,
                                                "optional":option_optional}
 
@@ -194,7 +198,9 @@ def dictionary_galaxy(files):
 def main():
     files = download_xml_wrappers(mothur_repo)
     commands_mothur = dictionary_mothur(mothur_commands_folder)
+    #commands_mothur_sorted = json.dumps(commands_mothur,sort_keys=True)
     commands_galaxy = dictionary_galaxy(files)
+    #commands_galaxy_sorted = json.dumps(commands_galaxy,sort_keys=True)
     if not os.path.isdir(output_files):
         os.makedirs(output_files)
     out_json_mothur = os.path.join(output_files,"mothur_commands.json")
