@@ -12,7 +12,8 @@ import re
 from itertools import combinations
 from galaxy.util.xml_macros import load
 
-mothur_commands_folder = "/home/laptop/Galaxy/mothur_analysis/mothur/source/commands"
+#mothur_commands_folder = "/home/laptop/Galaxy/mothur_analysis/mothur-1.39.5/source/commands"
+mothur_commands_folder = "/home/laptop/Galaxy/mothur_analysis/mothur-1.48.0/source/commands"
 #mothur_commands_folder = "/home/laptop/Galaxy/tools-iuc/tools/mothur"
 #mothur_repo = "https://github.com/galaxyproject/tools-iuc/tree/main/tools/mothur"
 #prefix_addr = "https://raw.githubusercontent.com/galaxyproject/tools-iuc/main/tools/mothur/"
@@ -21,11 +22,11 @@ output_files = "./output_files"
 
 def dictionary_mothur(path):
     temp_dictionary = {}
-    exclude = ["nocommands.cpp","quitcommand.cpp","helpcommand.cpp","newcommandtemplate.cpp","systemcommand.cpp"]
+    exclude = ["nocommands.cpp","quitcommand.cpp","helpcommand.cpp","newcommandtemplate.cpp","systemcommand.cpp","getcommandinfocommand.cpp"]
     files = [os.path.join(mothur_commands_folder,x) for x in os.listdir(path) if "cpp" in x and x not in exclude]
     raw_outputs = ""
     for i in files:
-        rawdata = open(i).readlines()
+        rawdata = open(i).readlines()        
         command = [x for x in rawdata if 'helpString += "The' in x][0].strip().split(" ")[3]
         lines = [x for x in rawdata if 'CommandParameter ' in x]
         raw_parameters = [x for x in open(i).readlines() if 'CommandParameter ' in x]
@@ -38,10 +39,10 @@ def dictionary_mothur(path):
             index3 = l.index(")")
             options = [x.strip(' \"') for x in  l[index2+2:index3].split(",")]
             options_selector = ""
-            #option_datatype = []
+            option_datatype = []
             if options[0] == 'InputTypes':
                 option_type = "data"
-                #option_datatype = [x for x in list(set(options[3].split("-")+options[4].split("-"))) if x != "none"]
+                option_datatype = [x for x in list(set(options[3].split("-")+options[4].split("-"))) if x != "none"]
             elif options[0] == "Number":
                 if len(option_name) > 3:
                     pattern = "|".join([option_name[x:y] for x, y in combinations(range(len(option_name) + 1), r = 2) if len(option_name[x:y]) >3 ])
@@ -78,12 +79,13 @@ def dictionary_mothur(path):
                 option_optional = "true"
                 option_multiple = "false"
             else:
-                raise Exception("[x] Error during paramter parsing")
+                print(options)
+                #raise Exception("[x] Error during paramter parsing")
 
             if options_selector != "":
                 parameters[option_name] = {"type":option_type,
                                            "default":option_default,
-                                           #"datatype":option_datatype,
+                                           "datatype":option_datatype,
                                            "multiple":option_multiple,
                                            "optional":option_optional,
                                            "selector":options_selector
@@ -91,7 +93,7 @@ def dictionary_mothur(path):
             else:
                 parameters[option_name] = {"type":option_type,
                                            "default":option_default,
-                                           #"datatype":option_datatype,
+                                           "datatype":option_datatype,
                                            "multiple":option_multiple,
                                            "optional":option_optional,
                 }
@@ -137,10 +139,10 @@ def dictionary_galaxy(files):
                 if 'argument' in param.attrib.keys() and 'type' in param.attrib.keys():
                     option_name = param.attrib["argument"]
                     option_type = param.attrib["type"]
-                    #if option_type == "data":
-                    #    option_datatype = param.attrib["format"].split(",")
-                    #else:
-                    #    option_datatype = []
+                    if option_type == "data":
+                        option_datatype = param.attrib["format"].split(",")
+                    else:
+                        option_datatype = []
                     if 'value' in param.attrib.keys():
                         option_default = param.attrib["value"]
                     else:
@@ -160,17 +162,17 @@ def dictionary_galaxy(files):
                         option_default = ""
                     parameters[option_name] = {"type":option_type,
                                                "default":option_default,
-                                               #"datatype":option_datatype,
+                                               "datatype":option_datatype,
                                                "multiple":option_multiple,
                                                "optional":option_optional}
 
                 elif 'name' in param.attrib.keys() and 'type' in param.attrib.keys():
                     option_name = param.attrib["name"]
                     option_type = param.attrib["type"]
-                    #if option_type == "data":
-                    #    option_datatype = param.attrib["format"].split(",")
-                    #else:
-                    #    option_datatype = []
+                    if option_type == "data":
+                        option_datatype = param.attrib["format"].split(",")
+                    else:
+                        option_datatype = []
                     if 'value' in param.attrib.keys():
                         option_default = param.attrib["value"]
                     else:
@@ -190,7 +192,7 @@ def dictionary_galaxy(files):
                         option_default = ""
                     parameters[option_name] = {"type":option_type,
                                                "default":option_default,
-                                               #"datatype":option_datatype,
+                                               "datatype":option_datatype,
                                                "multiple":option_multiple,
                                                "optional":option_optional}
 
@@ -237,17 +239,77 @@ def main():
         for i in list(common_commands): out.write(i+"\n")
     #Compare paraters
     missing_parameters = os.path.join(output_files,"missing_parameters.txt")
-    exclude = ["inputdir","outputdir","seed","processors"]
+    exclude = ["inputdir","outputdir","processors",
+               # filenames included under different ids
+               ########################################
+               "count","name","file", "corraxes", "constaxonomy", "shared", "otucorr", # included with other files
+               "ffasta","rfasta","fqfile","rqfile","allfiles", #not used in make.contigs
+               "fasta","qfile", "fastq", "phylip","column","oldfasta", # datatype inputs
+               "group", "dist", "taxonomy", # included with general name
+               "sabund", "repname","relabund", "rabund", "list", # input types, included in single inputs
+                "biom", # input included with different name
+               # not documented parameters
+               ###########################
+               "islist", #not documented https://github.com/mothur/mothur/issues/839
+               "strand", #not documented  https://github.com/mothur/mothur/issues/839
+               "minsmoothid", # commented help in source code https://github.com/mothur/mothur/blob/master/source/commands/chimerauchimecommand.cpp#L95
+               "uchimealns", # additionl output file, not necessary
+               "shortcuts", #not documented https://github.com/mothur/mothur/issues/839
+                "flow", # command not docummented in sortsetcommands.cpp
+               "adjust", #not documented https://github.com/mothur/mothur/issues/839
+               "timing", #not documented https://github.com/mothur/mothur/issues/839
+               "showabund", #not documented https://github.com/mothur/mothur/issues/839
+               "ranktec", #commented in source code
+               "nlogs", #commented in source code
+               "svmnorm", #commented in source code
+               "classes", #commented in source code
+               "wilcsamename", # commented in source code
+               "subject", # commented in source code
+               "subclass", # commented in source code
+                "random", # not documented in parsimonycommand.cpp
+               "map", # not documented in renameseqscommand.cpp
+                "ordergroup", # commented in sharedcommand.cpp (make.shared.xml)
+               # not required
+               ##############
+               "output",
+                "blastlocation", # not required in Galaxy
+                "quiet",
+                "stdout",
+                "aligned", # hardcoded in seqs.error.xml
+                "version",
+                "verbose",
+                # not included
+                ##########
+               "compress", #indicate that the output should be compressed
+               "alignreport",
+               "seed",
+               "rseed",
+               "subsample", # not used in rarefaction.shared.xml
+               "report", "reference", # input types skipped in seq.errors.xml
+               "all", #used true by default, collect command splitted in two
+               "DNA", # included as option in selector
+               "protein", # included as option in selector
+
+    ]
     with open(missing_parameters,"w") as out:
+        counter=0
         for command in sorted(common_commands):
             params_mothur = [x for x in sorted(list(commands_mothur[command].keys())) if x not in exclude]
             params_galaxy = sorted(list(commands_galaxy[command].keys()))
             diff = list(set(params_mothur) - set(params_galaxy))
-
+            print(diff)
             if diff:
-                out.write("\n[x] Command: {}\n".format(command))
+                out.write("\n[x] {} Command: {}\n".format(counter,command))
                 out.write("[x] Differences: {}\n\n".format(diff))
-
+                counter+=1
+    #with open("clean_filenames.txt","w") as out:
+    #    for command in sorted(common_commands):
+    #        params_mothur = [x for x in sorted(list(commands_mothur[command].keys())) if x not in exclude]
+    #        params_galaxy = sorted(list(commands_galaxy[command].keys()))
+    #        diff = list(set(params_mothur) - set(params_galaxy))
+    #        if diff:
+    #            out.write("{}.xml\n".format(command))
+    
 
 if __name__ == "__main__":
     main()
