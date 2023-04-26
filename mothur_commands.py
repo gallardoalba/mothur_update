@@ -20,6 +20,12 @@ mothur_commands_folder = "/home/laptop/Galaxy/mothur_analysis/mothur-1.48.0/sour
 xml_folder = "/home/laptop/Galaxy/tools-iuc/tools/mothur"
 output_files = "./output_files"
 
+translator = {"f":"false","t":"true","F":"false","T":"true"}
+
+datainput = '<param argument="{}" type="data" format="{}" multiple="{}" label="{}"/>\n'
+valueinput = '<param argument="{}" type="{}" value="{}" optional="{}" label="{}"/>\n'
+boolinput = '<param argument="{}" type="boolean" truevalue="true" falsevalue="false" checked="{}" label="{}"/>\n'
+
 def dictionary_mothur(path):
     temp_dictionary = {}
     exclude = ["nocommands.cpp","quitcommand.cpp","helpcommand.cpp","newcommandtemplate.cpp","systemcommand.cpp","getcommandinfocommand.cpp"]
@@ -78,9 +84,10 @@ def dictionary_mothur(path):
             elif option_name == "processors":
                 option_optional = "true"
                 option_multiple = "false"
-            else:
-                print(options)
+            #else:
+                #print(option_name)
                 #raise Exception("[x] Error during paramter parsing")
+
 
             if options_selector != "":
                 parameters[option_name] = {"type":option_type,
@@ -297,10 +304,20 @@ def main():
             params_mothur = [x for x in sorted(list(commands_mothur[command].keys())) if x not in exclude]
             params_galaxy = sorted(list(commands_galaxy[command].keys()))
             diff = list(set(params_mothur) - set(params_galaxy))
-            print(diff)
-            if diff:
+            if diff:    
+                print("\n")
                 out.write("\n[x] {} Command: {}\n".format(counter,command))
                 out.write("[x] Differences: {}\n\n".format(diff))
+                for i in diff:
+                    print(commands_mothur[command][i])
+                    if commands_mothur[command][i]["type"] == "data":
+                        out.write(datainput.format(i,",".join([x for x in commands_mothur[command][i]["datatype"]]),commands_mothur[command][i]["multiple"],i))
+                    elif commands_mothur[command][i]["type"] == "boolean":
+                        out.write(boolinput.format(i,translator[commands_mothur[command][i]["default"]],i))
+                    elif commands_mothur[command][i]["type"] in ["integer","float"]:
+                        out.write(valueinput.format(i,commands_mothur[command][i]["type"],commands_mothur[command][i]["default"],commands_mothur[command][i]["optional"],i))
+
+
                 counter+=1
     #with open("clean_filenames.txt","w") as out:
     #    for command in sorted(common_commands):
@@ -313,3 +330,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+valueinput = '<param argument="{}" type="{}" value="{}" optional="{}" label="{}"/>\n'

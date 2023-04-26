@@ -735,13 +735,6 @@
             "multiple": "false",
             "optional": "True"
         },
-        "subclass": {
-            "type": "text",
-            "default": "",
-            "datatype": [],
-            "multiple": "false",
-            "optional": "True"
-        },
         "multiclass": {
             "type": "select",
             "default": "",
@@ -8411,8 +8404,7 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "mothur.names",
-                "mothur.shared"
+                "mothur.names"
             ],
             "multiple": "false",
             "optional": "false"

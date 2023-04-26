@@ -47,8 +47,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -531,8 +531,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "sffFastQFile",
-                "oligos"
+                "oligos",
+                "sffFastQFile"
             ],
             "multiple": "false",
             "optional": "true"
@@ -791,8 +791,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -888,8 +888,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "fileFasta",
-                "file"
+                "file",
+                "fileFasta"
             ],
             "multiple": "false",
             "optional": "false"
@@ -905,8 +905,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "fileFasta",
-                "file"
+                "file",
+                "fileFasta"
             ],
             "multiple": "false",
             "optional": "false"
@@ -915,8 +915,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "fileFasta",
-                "file"
+                "file",
+                "fileFasta"
             ],
             "multiple": "false",
             "optional": "false"
@@ -925,8 +925,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "fileFasta",
-                "file"
+                "file",
+                "fileFasta"
             ],
             "multiple": "false",
             "optional": "false"
@@ -962,8 +962,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "file",
-                "NameCount"
+                "NameCount",
+                "file"
             ],
             "multiple": "false",
             "optional": "false"
@@ -972,9 +972,9 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "file",
+                "NameCount",
                 "CountGroup",
-                "NameCount"
+                "file"
             ],
             "multiple": "false",
             "optional": "false"
@@ -1174,8 +1174,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -1202,8 +1202,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -1477,8 +1477,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "FNGLT",
-                "NameCount"
+                "NameCount",
+                "FNGLT"
             ],
             "multiple": "false",
             "optional": "false"
@@ -1487,9 +1487,9 @@
             "type": "data",
             "default": "",
             "datatype": [
+                "NameCount",
                 "CountGroup",
-                "FNGLT",
-                "NameCount"
+                "FNGLT"
             ],
             "multiple": "false",
             "optional": "false"
@@ -1617,8 +1617,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "FNGLT",
-                "NameCount"
+                "NameCount",
+                "FNGLT"
             ],
             "multiple": "false",
             "optional": "false"
@@ -1627,8 +1627,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "true"
@@ -2089,8 +2089,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "FNGLT",
-                "NameCount"
+                "NameCount",
+                "FNGLT"
             ],
             "multiple": "false",
             "optional": "false"
@@ -2099,9 +2099,9 @@
             "type": "data",
             "default": "",
             "datatype": [
+                "NameCount",
                 "CountGroup",
-                "FNGLT",
-                "NameCount"
+                "FNGLT"
             ],
             "multiple": "false",
             "optional": "false"
@@ -2138,8 +2138,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "FNGLT",
-                "tax"
+                "tax",
+                "FNGLT"
             ],
             "multiple": "false",
             "optional": "false"
@@ -2148,8 +2148,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "FNGLT",
-                "tax"
+                "tax",
+                "FNGLT"
             ],
             "multiple": "false",
             "optional": "false"
@@ -2375,8 +2375,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -3259,8 +3259,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -3499,8 +3499,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -4085,8 +4085,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -4511,8 +4511,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -4679,8 +4679,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -4689,8 +4689,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "sharedGroup"
+                "sharedGroup",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -5903,8 +5903,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -6184,8 +6184,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -6475,8 +6475,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -6914,8 +6914,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "FNGLT",
-                "NameCount"
+                "NameCount",
+                "FNGLT"
             ],
             "multiple": "false",
             "optional": "true"
@@ -7389,8 +7389,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -7534,8 +7534,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -7670,8 +7670,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -8089,8 +8089,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -8578,8 +8578,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "FNGLT",
-                "NameCount"
+                "NameCount",
+                "FNGLT"
             ],
             "multiple": "false",
             "optional": "false"
@@ -8588,9 +8588,9 @@
             "type": "data",
             "default": "",
             "datatype": [
+                "NameCount",
                 "CountGroup",
-                "FNGLT",
-                "NameCount"
+                "FNGLT"
             ],
             "multiple": "false",
             "optional": "false"
@@ -8627,8 +8627,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "FNGLT",
-                "tax"
+                "tax",
+                "FNGLT"
             ],
             "multiple": "false",
             "optional": "false"
@@ -8637,8 +8637,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "FNGLT",
-                "tax"
+                "tax",
+                "FNGLT"
             ],
             "multiple": "false",
             "optional": "false"
@@ -9080,8 +9080,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -9215,8 +9215,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -9336,8 +9336,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -9912,8 +9912,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -10033,8 +10033,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -10289,8 +10289,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "sharedGroup",
-                "NameSHared"
+                "NameSHared",
+                "sharedGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -10299,8 +10299,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "sharedGroup",
-                "NameSHared"
+                "NameSHared",
+                "sharedGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -10792,8 +10792,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -11380,8 +11380,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "sharedGroup"
+                "sharedGroup",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -11390,8 +11390,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "sharedGroup"
+                "sharedGroup",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -11721,8 +11721,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -12844,8 +12844,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "PhylipColumn",
-                ""
+                "",
+                "PhylipColumn"
             ],
             "multiple": "false",
             "optional": "false"
@@ -14416,8 +14416,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "FNGLT",
-                "NameCount"
+                "NameCount",
+                "FNGLT"
             ],
             "multiple": "false",
             "optional": "false"
@@ -14426,9 +14426,9 @@
             "type": "data",
             "default": "",
             "datatype": [
+                "NameCount",
                 "CountGroup",
-                "FNGLT",
-                "NameCount"
+                "FNGLT"
             ],
             "multiple": "false",
             "optional": "false"
@@ -14606,8 +14606,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "NameCount"
+                "NameCount",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -14616,8 +14616,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "sharedGroup"
+                "sharedGroup",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
