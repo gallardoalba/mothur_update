@@ -1,0 +1,60 @@
+
+[x] 0 Command: biom.info
+[x] Differences: ['format']
+
+
+[x] 1 Command: chimera.uchime
+[x] Differences: ['uchime']
+
+
+[x] 2 Command: chimera.vsearch
+[x] Differences: ['vsearch']
+
+
+[x] 3 Command: chop.seqs
+[x] Differences: ['format']
+
+
+[x] 4 Command: cluster
+[x] Differences: ['vsearch']
+
+
+[x] 5 Command: cluster.split
+[x] Differences: ['vsearch']
+
+
+[x] 6 Command: get.groups
+[x] Differences: ['sets']
+
+
+[x] 7 Command: get.lineage
+[x] Differences: ['label']
+
+
+[x] 8 Command: get.rabund
+[x] Differences: ['groups']
+
+
+[x] 9 Command: make.group
+[x] Differences: ['format']
+
+
+[x] 10 Command: pre.cluster
+[x] Differences: ['max_indels', 'error_dist', 'alpha', 'method', 'error_rate', 'indel_prob', 'delta', 'clump']
+
+
+[x] 11 Command: rarefaction.single
+[x] Differences: ['alpha', 'groups']
+
+
+[x] 12 Command: remove.groups
+[x] Differences: ['sets']
+
+
+[x] 13 Command: split.groups
+[x] Differences: ['format']
+
+
+[x] 14 Command: trim.flows
+[x] Differences: ['floworder']
+

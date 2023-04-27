@@ -1,0 +1,212 @@
+
+[x] 0 Command: biom.info
+[x] Differences: ['format']
+
+
+[x] 1 Command: chimera.bellerophon
+[x] Differences: ['removechimeras']
+
+<param argument="removechimeras" type="boolean" truevalue="true" falsevalue="false" checked="true" label="removechimeras"/>
+
+[x] 2 Command: chimera.ccode
+[x] Differences: ['removechimeras']
+
+<param argument="removechimeras" type="boolean" truevalue="true" falsevalue="false" checked="true" label="removechimeras"/>
+
+[x] 3 Command: chimera.perseus
+[x] Differences: ['removechimeras']
+
+<param argument="removechimeras" type="boolean" truevalue="true" falsevalue="false" checked="true" label="removechimeras"/>
+
+[x] 4 Command: chimera.pintail
+[x] Differences: ['removechimeras']
+
+<param argument="removechimeras" type="boolean" truevalue="true" falsevalue="false" checked="true" label="removechimeras"/>
+
+[x] 5 Command: chimera.slayer
+[x] Differences: ['removechimeras']
+
+<param argument="removechimeras" type="boolean" truevalue="true" falsevalue="false" checked="true" label="removechimeras"/>
+
+[x] 6 Command: chimera.uchime
+[x] Differences: ['uchime', 'removechimeras']
+
+<param argument="removechimeras" type="boolean" truevalue="true" falsevalue="false" checked="true" label="removechimeras"/>
+
+[x] 7 Command: chimera.vsearch
+[x] Differences: ['vsearch', 'removechimeras']
+
+<param argument="removechimeras" type="boolean" truevalue="true" falsevalue="false" checked="true" label="removechimeras"/>
+
+[x] 8 Command: chop.seqs
+[x] Differences: ['format']
+
+
+[x] 9 Command: cluster
+[x] Differences: ['vsearch']
+
+
+[x] 10 Command: cluster.split
+[x] Differences: ['vsearch']
+
+
+[x] 11 Command: dist.seqs
+[x] Differences: ['fitcalc']
+
+<param argument="fitcalc" type="boolean" truevalue="true" falsevalue="false" checked="false" label="fitcalc"/>
+
+[x] 12 Command: dist.shared
+[x] Differences: ['withreplacement']
+
+<param argument="withreplacement" type="boolean" truevalue="true" falsevalue="false" checked="false" label="withreplacement"/>
+
+[x] 13 Command: filter.shared
+[x] Differences: ['accnos']
+
+<param argument="accnos" type="data" format="" multiple="false" label="accnos"/>
+
+[x] 14 Command: get.communitytype
+[x] Differences: ['withreplacement']
+
+<param argument="withreplacement" type="boolean" truevalue="true" falsevalue="false" checked="false" label="withreplacement"/>
+
+[x] 15 Command: get.groups
+[x] Differences: ['sets']
+
+
+[x] 16 Command: get.lineage
+[x] Differences: ['label']
+
+
+[x] 17 Command: get.oturep
+[x] Differences: ['rename']
+
+<param argument="rename" type="boolean" truevalue="true" falsevalue="false" checked="false" label="rename"/>
+
+[x] 18 Command: get.rabund
+[x] Differences: ['groups']
+
+
+[x] 19 Command: get.seqs
+[x] Differences: ['contigsreport']
+
+<param argument="contigsreport" type="data" format="FNGLT" multiple="false" label="contigsreport"/>
+
+[x] 20 Command: lefse
+[x] Differences: ['pairwise', 'clr']
+
+<param argument="pairwise" type="boolean" truevalue="true" falsevalue="false" checked="false" label="pairwise"/>
+<param argument="clr" type="data" format="clr,shared" multiple="false" label="clr"/>
+
+[x] 21 Command: list.seqs
+[x] Differences: ['contigsreport']
+
+<param argument="contigsreport" type="data" format="FNGLT" multiple="false" label="contigsreport"/>
+
+[x] 22 Command: make.contigs
+[x] Differences: ['maxambig', 'maxlength', 'maxee', 'maxhomop']
+
+<param argument="maxambig" type="integer" value="-1" optional="true" label="maxambig"/>
+<param argument="maxlength" type="integer" value="-1" optional="true" label="maxlength"/>
+<param argument="maxee" type="float" value="10000" optional="true" label="maxee"/>
+<param argument="maxhomop" type="integer" value="-1" optional="true" label="maxhomop"/>
+
+[x] 23 Command: make.group
+[x] Differences: ['format']
+
+
+[x] 24 Command: make.shared
+[x] Differences: ['keepzeroes']
+
+<param argument="keepzeroes" type="boolean" truevalue="true" falsevalue="false" checked="false" label="keepzeroes"/>
+
+[x] 25 Command: metastats
+[x] Differences: ['clr']
+
+<param argument="clr" type="data" format="clr,shared" multiple="false" label="clr"/>
+
+[x] 26 Command: otu.hierarchy
+[x] Differences: ['asvlist']
+
+<param argument="asvlist" type="data" format="" multiple="true" label="asvlist"/>
+
+[x] 27 Command: pairwise.seqs
+[x] Differences: ['kmercutoff', 'ksize', 'fitcalc']
+
+<param argument="kmercutoff" type="float" value="-1.0" optional="false" label="kmercutoff"/>
+<param argument="ksize" type="float" value="8" optional="true" label="ksize"/>
+<param argument="fitcalc" type="boolean" truevalue="true" falsevalue="false" checked="false" label="fitcalc"/>
+
+[x] 28 Command: pcr.seqs
+[x] Differences: ['checkorient']
+
+<param argument="checkorient" type="boolean" truevalue="true" falsevalue="false" checked="true" label="checkorient"/>
+
+[x] 29 Command: pre.cluster
+[x] Differences: ['clump', 'indel_prob', 'alpha', 'error_rate', 'error_dist', 'method', 'delta', 'max_indels']
+
+
+[x] 30 Command: rarefaction.shared
+[x] Differences: ['groupmode', 'withreplacement']
+
+<param argument="groupmode" type="boolean" truevalue="true" falsevalue="false" checked="true" label="groupmode"/>
+<param argument="withreplacement" type="boolean" truevalue="true" falsevalue="false" checked="false" label="withreplacement"/>
+
+[x] 31 Command: rarefaction.single
+[x] Differences: ['groupmode', 'alpha', 'groups']
+
+<param argument="groupmode" type="boolean" truevalue="true" falsevalue="false" checked="true" label="groupmode"/>
+
+[x] 32 Command: remove.groups
+[x] Differences: ['sets']
+
+
+[x] 33 Command: remove.seqs
+[x] Differences: ['contigsreport']
+
+<param argument="contigsreport" type="data" format="FNGLT" multiple="false" label="contigsreport"/>
+
+[x] 34 Command: split.groups
+[x] Differences: ['format']
+
+
+[x] 35 Command: sub.sample
+[x] Differences: ['withreplacement', 'tree']
+
+<param argument="withreplacement" type="boolean" truevalue="true" falsevalue="false" checked="false" label="withreplacement"/>
+<param argument="tree" type="data" format="FLSSR" multiple="false" label="tree"/>
+
+[x] 36 Command: summary.seqs
+[x] Differences: ['summary', 'contigsreport']
+
+<param argument="summary" type="data" format="FastaReport" multiple="false" label="summary"/>
+<param argument="contigsreport" type="data" format="FastaReport" multiple="false" label="contigsreport"/>
+
+[x] 37 Command: summary.shared
+[x] Differences: ['withreplacement']
+
+<param argument="withreplacement" type="boolean" truevalue="true" falsevalue="false" checked="false" label="withreplacement"/>
+
+[x] 38 Command: summary.single
+[x] Differences: ['withreplacement']
+
+<param argument="withreplacement" type="boolean" truevalue="true" falsevalue="false" checked="false" label="withreplacement"/>
+
+[x] 39 Command: tree.shared
+[x] Differences: ['withreplacement']
+
+<param argument="withreplacement" type="boolean" truevalue="true" falsevalue="false" checked="false" label="withreplacement"/>
+
+[x] 40 Command: trim.flows
+[x] Differences: ['floworder']
+
+
+[x] 41 Command: unifrac.unweighted
+[x] Differences: ['withreplacement']
+
+<param argument="withreplacement" type="boolean" truevalue="true" falsevalue="false" checked="false" label="withreplacement"/>
+
+[x] 42 Command: unifrac.weighted
+[x] Differences: ['withreplacement']
+
+<param argument="withreplacement" type="boolean" truevalue="true" falsevalue="false" checked="false" label="withreplacement"/>

@@ -293,7 +293,7 @@
         },
         "filter": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -321,7 +321,7 @@
         },
         "removechimeras": {
             "type": "boolean",
-            "default": "t",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -385,7 +385,7 @@
         },
         "sorted": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -555,14 +555,14 @@
         },
         "checkorient": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "includescrap": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -686,7 +686,7 @@
         },
         "trim": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -888,8 +888,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "file",
-                "fileFasta"
+                "fileFasta",
+                "file"
             ],
             "multiple": "false",
             "optional": "false"
@@ -905,8 +905,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "file",
-                "fileFasta"
+                "fileFasta",
+                "file"
             ],
             "multiple": "false",
             "optional": "false"
@@ -915,8 +915,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "file",
-                "fileFasta"
+                "fileFasta",
+                "file"
             ],
             "multiple": "false",
             "optional": "false"
@@ -925,8 +925,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "file",
-                "fileFasta"
+                "fileFasta",
+                "file"
             ],
             "multiple": "false",
             "optional": "false"
@@ -973,8 +973,8 @@
             "default": "",
             "datatype": [
                 "NameCount",
-                "CountGroup",
-                "file"
+                "file",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -983,8 +983,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "file"
+                "file",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -1342,7 +1342,7 @@
         },
         "withreplacement": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -1488,8 +1488,8 @@
             "default": "",
             "datatype": [
                 "NameCount",
-                "CountGroup",
-                "FNGLT"
+                "FNGLT",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -1498,8 +1498,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "FNGLT"
+                "FNGLT",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -1558,7 +1558,7 @@
         },
         "dups": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -1808,7 +1808,7 @@
         },
         "sim": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -1854,7 +1854,7 @@
         },
         "relabund": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -2100,8 +2100,8 @@
             "default": "",
             "datatype": [
                 "NameCount",
-                "CountGroup",
-                "FNGLT"
+                "FNGLT",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -2110,8 +2110,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "FNGLT"
+                "FNGLT",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -2179,7 +2179,7 @@
         },
         "dups": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -2320,14 +2320,14 @@
         },
         "keepties": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "makerare": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -2707,7 +2707,7 @@
         },
         "all": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -2901,7 +2901,7 @@
         },
         "ignorechimeras": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -2915,7 +2915,7 @@
         },
         "aligned": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -3007,7 +3007,7 @@
         },
         "metric": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -3092,21 +3092,21 @@
         },
         "verbose": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "quiet": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "version": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -3120,70 +3120,70 @@
         },
         "norandom": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "shuffle": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "neighbor": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "expblen": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "expdist": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "DNA": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "protein": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "jukes": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "kimura": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "stdout": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -3368,7 +3368,7 @@
         },
         "probs": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -3382,14 +3382,14 @@
         },
         "shortcuts": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "relabund": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -3642,7 +3642,7 @@
         },
         "bygroup": {
             "type": "boolean",
-            "default": "f",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -3693,7 +3693,7 @@
         },
         "gz": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -3920,7 +3920,7 @@
         },
         "checkorient": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -4004,7 +4004,7 @@
         },
         "allfiles": {
             "type": "boolean",
-            "default": "t",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -4023,7 +4023,7 @@
         },
         "fasta": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -4116,14 +4116,14 @@
         },
         "countgaps": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "short": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -4154,7 +4154,7 @@
         },
         "keepn": {
             "type": "boolean",
-            "default": "f",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -4200,7 +4200,7 @@
         },
         "checkorient": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -4230,28 +4230,28 @@
         },
         "flow": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "trim": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "fasta": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "qfile": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -4535,7 +4535,7 @@
         },
         "checkorient": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -4597,14 +4597,14 @@
         },
         "keepprimer": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "keepdots": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -4689,8 +4689,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "sharedGroup",
-                "CountGroup"
+                "CountGroup",
+                "sharedGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -4813,21 +4813,21 @@
         },
         "countends": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "fitcalc": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "compress": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -4914,7 +4914,7 @@
         },
         "makerelabund": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -5027,7 +5027,7 @@
         },
         "qfile": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -5055,7 +5055,7 @@
         },
         "checkorient": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -5074,14 +5074,14 @@
         },
         "allfiles": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "trimoverlap": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -5417,7 +5417,7 @@
         },
         "withreplacement": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -5633,28 +5633,28 @@
         },
         "min": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "merge": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "adjust": {
             "type": "text",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "hcluster": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -5820,14 +5820,14 @@
         },
         "stratified": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "diversified": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -5931,7 +5931,7 @@
         },
         "relabund": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -5945,7 +5945,7 @@
         },
         "persample": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -5984,7 +5984,7 @@
         },
         "probs": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -6257,21 +6257,21 @@
         },
         "realign": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "trim": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "split": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -6299,14 +6299,14 @@
         },
         "dereplicate": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "removechimeras": {
             "type": "boolean",
-            "default": "t",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -6520,21 +6520,21 @@
         },
         "withreplacement": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "consensus": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "random": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -6634,7 +6634,7 @@
         },
         "requiredonly": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -6772,7 +6772,7 @@
         },
         "stop": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -6804,8 +6804,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "shared",
-                "clr"
+                "clr",
+                "shared"
             ],
             "multiple": "false",
             "optional": "false"
@@ -6814,8 +6814,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "shared",
-                "clr"
+                "clr",
+                "shared"
             ],
             "multiple": "false",
             "optional": "false"
@@ -6940,7 +6940,7 @@
         },
         "large": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -6984,7 +6984,7 @@
         },
         "trim": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -7115,14 +7115,14 @@
         },
         "allfiles": {
             "type": "boolean",
-            "default": "t",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "flip": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -7150,7 +7150,7 @@
         },
         "keepforward": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -7244,7 +7244,7 @@
         },
         "withreplacement": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -7325,7 +7325,7 @@
         },
         "groupmode": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -7486,7 +7486,7 @@
         },
         "keepzeroes": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -7572,7 +7572,7 @@
         },
         "random": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -7599,14 +7599,14 @@
         },
         "withreplacement": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "consensus": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -7760,14 +7760,14 @@
         },
         "persample": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "withreplacement": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -7873,14 +7873,14 @@
         },
         "flip": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "checkorient": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -7957,28 +7957,28 @@
         },
         "allfiles": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "keepforward": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "logtransform": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "qtrim": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -8155,14 +8155,14 @@
         },
         "chimealns": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "removechimeras": {
             "type": "boolean",
-            "default": "t",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -8225,7 +8225,7 @@
         },
         "dereplicate": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -8239,14 +8239,14 @@
         },
         "skipgaps": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "skipgaps2": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -8267,7 +8267,7 @@
         },
         "ucl": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -8441,14 +8441,14 @@
         },
         "withreplacement": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "distance": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -8516,7 +8516,7 @@
         },
         "all": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -8589,8 +8589,8 @@
             "default": "",
             "datatype": [
                 "NameCount",
-                "CountGroup",
-                "FNGLT"
+                "FNGLT",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -8599,8 +8599,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "FNGLT"
+                "FNGLT",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -8668,7 +8668,7 @@
         },
         "dups": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -8712,7 +8712,7 @@
         },
         "fitcalc": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -8798,14 +8798,14 @@
         },
         "countends": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "compress": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -8997,7 +8997,7 @@
         },
         "filter": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -9018,7 +9018,7 @@
         },
         "removechimeras": {
             "type": "boolean",
-            "default": "t",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -9132,14 +9132,14 @@
         },
         "uchimealns": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "removechimeras": {
             "type": "boolean",
-            "default": "t",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -9188,7 +9188,7 @@
         },
         "dereplicate": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -9239,14 +9239,14 @@
         },
         "dereplicate": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "removechimeras": {
             "type": "boolean",
-            "default": "t",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -9439,7 +9439,7 @@
         },
         "checkorient": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -9481,21 +9481,21 @@
         },
         "fasta": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "qfile": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "pacbio": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -9588,28 +9588,28 @@
         },
         "showabund": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "runsensspec": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "cluster": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "timing": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -9701,21 +9701,21 @@
         },
         "dist": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "islist": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "classic": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -9843,7 +9843,7 @@
         },
         "debug": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -9857,7 +9857,7 @@
         },
         "modifynames": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -9957,7 +9957,7 @@
         },
         "rarefy": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -9971,21 +9971,21 @@
         },
         "summary": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "collect": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "scale": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -10050,7 +10050,7 @@
         },
         "relabund": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -10229,21 +10229,21 @@
         },
         "showabund": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "timing": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "sim": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -10332,7 +10332,7 @@
         },
         "compress": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -10380,7 +10380,7 @@
         },
         "keytrim": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -10613,7 +10613,7 @@
         },
         "flip": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -10839,7 +10839,7 @@
         },
         "weighted": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -10871,7 +10871,7 @@
         },
         "rename": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -11079,7 +11079,7 @@
         },
         "groupmode": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -11380,8 +11380,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "sharedGroup",
-                "CountGroup"
+                "CountGroup",
+                "sharedGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -11390,8 +11390,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "sharedGroup",
-                "CountGroup"
+                "CountGroup",
+                "sharedGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -11541,7 +11541,7 @@
         },
         "svg": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -12074,7 +12074,7 @@
         },
         "metric": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -12322,7 +12322,7 @@
         },
         "withreplacement": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -12364,7 +12364,7 @@
     "set.logfile": {
         "append": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -12447,14 +12447,14 @@
         },
         "nseqs": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "sharedotus": {
             "type": "boolean",
-            "default": "t",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -12963,7 +12963,7 @@
         },
         "printref": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -13434,7 +13434,7 @@
         },
         "sim": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -13473,8 +13473,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "shared",
-                "clr"
+                "clr",
+                "shared"
             ],
             "multiple": "false",
             "optional": "false"
@@ -13483,8 +13483,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "shared",
-                "clr"
+                "clr",
+                "shared"
             ],
             "multiple": "false",
             "optional": "false"
@@ -13547,14 +13547,14 @@
         },
         "wilc": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "norm": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -13568,14 +13568,14 @@
         },
         "wilcsamename": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "curv": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -13619,7 +13619,7 @@
         },
         "pairwise": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -13835,14 +13835,14 @@
         },
         "filter": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "correction": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -13863,7 +13863,7 @@
         },
         "removechimeras": {
             "type": "boolean",
-            "default": "t",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -14008,7 +14008,7 @@
         },
         "vertical": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -14227,14 +14227,14 @@
         },
         "shorten": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
         },
         "deleteold": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -14331,14 +14331,14 @@
         },
         "withreplacement": {
             "type": "boolean",
-            "default": "F",
+            "default": "false",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "jumble": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -14359,7 +14359,7 @@
         },
         "groupmode": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -14427,8 +14427,8 @@
             "default": "",
             "datatype": [
                 "NameCount",
-                "CountGroup",
-                "FNGLT"
+                "FNGLT",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -14437,8 +14437,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "CountGroup",
-                "FNGLT"
+                "FNGLT",
+                "CountGroup"
             ],
             "multiple": "false",
             "optional": "false"
@@ -14497,7 +14497,7 @@
         },
         "dups": {
             "type": "boolean",
-            "default": "T",
+            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "true"
@@ -14616,8 +14616,8 @@
             "type": "data",
             "default": "",
             "datatype": [
-                "sharedGroup",
-                "CountGroup"
+                "CountGroup",
+                "sharedGroup"
             ],
             "multiple": "false",
             "optional": "false"

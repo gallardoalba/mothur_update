@@ -158,21 +158,21 @@
         },
         "delta": {
             "type": "float",
-            "default": "",
+            "default": "0.0001",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "iters": {
             "type": "integer",
-            "default": "",
+            "default": "100",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "cutoff": {
             "type": "float",
-            "default": "",
+            "default": "0.3",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -668,14 +668,14 @@
         },
         "alpha": {
             "type": "float",
-            "default": "",
+            "default": "0.05",
             "datatype": [],
             "multiple": "false",
             "optional": "True"
         },
         "iters": {
             "type": "integer",
-            "default": "",
+            "default": "1000",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -943,21 +943,21 @@
         },
         "minabund": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "minpercent": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "rarepercent": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -971,21 +971,21 @@
         },
         "minnumsamples": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "minpercentsamples": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "mintotal": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -1017,7 +1017,7 @@
         },
         "label": {
             "type": "text",
-            "default": "",
+            "default": "userLabel",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -1045,7 +1045,7 @@
         },
         "printlevel": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -1284,13 +1284,6 @@
             "multiple": "false",
             "optional": "True"
         },
-        "label": {
-            "type": "text",
-            "default": "",
-            "datatype": [],
-            "multiple": "false",
-            "optional": "True"
-        },
         "savelog": {
             "type": "boolean",
             "default": "false",
@@ -1388,14 +1381,14 @@
         },
         "window": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "increment": {
             "type": "integer",
-            "default": "",
+            "default": "25",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -1560,35 +1553,35 @@
         },
         "diffs": {
             "type": "integer",
-            "default": "",
+            "default": "1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "match": {
             "type": "integer",
-            "default": "",
+            "default": "1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "mismatch": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "gapopen": {
             "type": "integer",
-            "default": "",
+            "default": "-2",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "gapextend": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -1731,14 +1724,14 @@
         },
         "precision": {
             "type": "integer",
-            "default": "",
+            "default": "100",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "cutoff": {
             "type": "float",
-            "default": "",
+            "default": "10",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -1775,14 +1768,14 @@
         },
         "alpha": {
             "type": "float",
-            "default": "",
+            "default": "0.05",
             "datatype": [],
             "multiple": "false",
             "optional": "True"
         },
         "iters": {
             "type": "integer",
-            "default": "",
+            "default": "1000",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -1973,7 +1966,7 @@
         },
         "abskew": {
             "type": "float",
-            "default": "",
+            "default": "1.9",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -2035,77 +2028,77 @@
         },
         "minh": {
             "type": "float",
-            "default": "",
+            "default": "0.3",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "mindiv": {
             "type": "float",
-            "default": "",
+            "default": "0.5",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "xn": {
             "type": "float",
-            "default": "",
+            "default": "8.0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "dn": {
             "type": "float",
-            "default": "",
+            "default": "1.4",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "xa": {
             "type": "float",
-            "default": "",
+            "default": "1.0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "chunks": {
             "type": "integer",
-            "default": "",
+            "default": "4",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "minchunk": {
             "type": "integer",
-            "default": "",
+            "default": "64",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "maxp": {
             "type": "integer",
-            "default": "",
+            "default": "2",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "minlen": {
             "type": "integer",
-            "default": "",
+            "default": "10",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "maxlen": {
             "type": "integer",
-            "default": "",
+            "default": "10000",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "idsmoothwindow": {
             "type": "integer",
-            "default": "",
+            "default": "32",
             "datatype": [],
             "multiple": "false",
             "optional": "True"
@@ -2119,7 +2112,7 @@
         },
         "queryfract": {
             "type": "float",
-            "default": "",
+            "default": "0.5",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -2469,14 +2462,14 @@
         },
         "delta": {
             "type": "float",
-            "default": "",
+            "default": "0.0001",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "iters": {
             "type": "integer",
-            "default": "",
+            "default": "100",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -2492,7 +2485,7 @@
         },
         "taxlevel": {
             "type": "integer",
-            "default": "",
+            "default": "3",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -2516,7 +2509,7 @@
         },
         "cutoff": {
             "type": "float",
-            "default": "",
+            "default": "0.0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -2736,7 +2729,7 @@
         },
         "printlevel": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -3173,14 +3166,14 @@
         },
         "window": {
             "type": "integer",
-            "default": "",
+            "default": "300",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "increment": {
             "type": "integer",
-            "default": "",
+            "default": "25",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -3346,14 +3339,14 @@
         },
         "deltaq": {
             "type": "integer",
-            "default": "",
+            "default": "6",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "insert": {
             "type": "integer",
-            "default": "",
+            "default": "20",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -3367,7 +3360,7 @@
         },
         "ksize": {
             "type": "integer",
-            "default": "",
+            "default": "8",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -3690,7 +3683,7 @@
         },
         "cutoff": {
             "type": "integer",
-            "default": "",
+            "default": "51",
             "datatype": [],
             "multiple": "false",
             "optional": "True"
@@ -3796,7 +3789,7 @@
         },
         "numbases": {
             "type": "integer",
-            "default": "",
+            "default": "10",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -4332,7 +4325,7 @@
         },
         "threshold": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -4346,7 +4339,7 @@
         },
         "cutoff": {
             "type": "integer",
-            "default": "",
+            "default": "51",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -4397,7 +4390,7 @@
         },
         "printlevel": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -4499,7 +4492,7 @@
         },
         "ntrees": {
             "type": "integer",
-            "default": "",
+            "default": "1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -4774,14 +4767,14 @@
         },
         "delta": {
             "type": "float",
-            "default": "",
+            "default": "0.0001",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "iters": {
             "type": "integer",
-            "default": "",
+            "default": "100",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -4795,7 +4788,7 @@
         },
         "printlevel": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -5197,35 +5190,35 @@
         },
         "bdiffs": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "pdiffs": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "tdiffs": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "ldiffs": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "sdiffs": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -5297,13 +5290,6 @@
             "multiple": "True",
             "optional": "false"
         },
-        "alpha": {
-            "type": "select",
-            "default": "",
-            "datatype": [],
-            "multiple": "false",
-            "optional": "false"
-        },
         "abund": {
             "type": "integer",
             "default": "",
@@ -5321,13 +5307,6 @@
         "freq": {
             "type": "float",
             "default": "",
-            "datatype": [],
-            "multiple": "false",
-            "optional": "false"
-        },
-        "groupmode": {
-            "type": "boolean",
-            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -5353,56 +5332,56 @@
         },
         "start": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "end": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "minlength": {
             "type": "integer",
-            "default": "",
+            "default": "10",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "maxlength": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "maxn": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "maxambig": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "maxhomop": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "criteria": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -5486,21 +5465,21 @@
         },
         "minsim": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "minscore": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "maxinsert": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -5523,28 +5502,28 @@
         },
         "minoverlap": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "ostart": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "oend": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "mismatches": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -5688,13 +5667,6 @@
         "freq": {
             "type": "float",
             "default": "",
-            "datatype": [],
-            "multiple": "false",
-            "optional": "false"
-        },
-        "groupmode": {
-            "type": "boolean",
-            "default": "true",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -6168,21 +6140,21 @@
         },
         "ksize": {
             "type": "integer",
-            "default": "",
+            "default": "8",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "iters": {
             "type": "integer",
-            "default": "",
+            "default": "100",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "cutoff": {
             "type": "integer",
-            "default": "",
+            "default": "80",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -6196,7 +6168,7 @@
         },
         "numwanted": {
             "type": "integer",
-            "default": "",
+            "default": "10",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -6210,28 +6182,28 @@
         },
         "match": {
             "type": "integer",
-            "default": "",
+            "default": "1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "mismatch": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "gapopen": {
             "type": "integer",
-            "default": "",
+            "default": "-2",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "gapextend": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -6279,7 +6251,7 @@
         },
         "printlevel": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -6379,7 +6351,7 @@
         },
         "iters": {
             "type": "integer",
-            "default": "",
+            "default": "1000",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -6495,21 +6467,21 @@
         },
         "alpha": {
             "type": "float",
-            "default": "",
+            "default": "-5.54",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "beta": {
             "type": "float",
-            "default": "",
+            "default": "0.33",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "cutoff": {
             "type": "float",
-            "default": "",
+            "default": "0.50",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -6598,91 +6570,91 @@
         },
         "ksize": {
             "type": "integer",
-            "default": "",
+            "default": "7",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "window": {
             "type": "integer",
-            "default": "",
+            "default": "50",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "increment": {
             "type": "integer",
-            "default": "",
+            "default": "5",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "match": {
             "type": "integer",
-            "default": "",
+            "default": "5",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "mismatch": {
             "type": "integer",
-            "default": "",
+            "default": "-4",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "numwanted": {
             "type": "integer",
-            "default": "",
+            "default": "15",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "parents": {
             "type": "integer",
-            "default": "",
+            "default": "3",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "minsim": {
             "type": "integer",
-            "default": "",
+            "default": "90",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "mincov": {
             "type": "integer",
-            "default": "",
+            "default": "70",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "iters": {
             "type": "integer",
-            "default": "",
+            "default": "1000",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "minbs": {
             "type": "integer",
-            "default": "",
+            "default": "90",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "minsnp": {
             "type": "integer",
-            "default": "",
+            "default": "10",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "divergence": {
             "type": "float",
-            "default": "",
+            "default": "1.007",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -7266,7 +7238,7 @@
         },
         "iters": {
             "type": "integer",
-            "default": "",
+            "default": "1000",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -8815,7 +8787,7 @@
         },
         "ksize": {
             "type": "integer",
-            "default": "",
+            "default": "8",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -8836,28 +8808,28 @@
         },
         "match": {
             "type": "integer",
-            "default": "",
+            "default": "1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "mismatch": {
             "type": "integer",
-            "default": "",
+            "default": "-1",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "gapopen": {
             "type": "integer",
-            "default": "",
+            "default": "-5",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "gapextend": {
             "type": "integer",
-            "default": "",
+            "default": "-2",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -8871,7 +8843,7 @@
         },
         "threshold": {
             "type": "float",
-            "default": "",
+            "default": "0.5",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -8905,14 +8877,14 @@
         },
         "diffs": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "percent": {
             "type": "integer",
-            "default": "",
+            "default": "0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -9216,7 +9188,7 @@
         },
         "abskew": {
             "type": "float",
-            "default": "",
+            "default": "1.9",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -9257,35 +9229,35 @@
         },
         "minh": {
             "type": "float",
-            "default": "",
+            "default": "0.3",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "mindiv": {
             "type": "float",
-            "default": "",
+            "default": "0.5",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "xn": {
             "type": "float",
-            "default": "",
+            "default": "8.0",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "dn": {
             "type": "float",
-            "default": "",
+            "default": "1.4",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "mindiffs": {
             "type": "integer",
-            "default": "",
+            "default": "3",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
@@ -9491,14 +9463,14 @@
         },
         "ksize": {
             "type": "integer",
-            "default": "",
+            "default": "7",
             "datatype": [],
             "multiple": "false",
             "optional": "false"
         },
         "increment": {
             "type": "integer",
-            "default": "",
+            "default": "10",
             "datatype": [],
             "multiple": "false",
             "optional": "false"

@@ -1,0 +1,1709 @@
+
+
+[-] Command: align.seqs	Parameter: search
+	[x] Difference in default values
+		Galaxy: 	Mothur: kmer
+
+[-] Command: align.seqs	Parameter: match
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: 1	Mothur: 1.0
+
+[-] Command: align.seqs	Parameter: threshold
+	[x] Difference in default values
+		Galaxy: 0.5	Mothur: 0.50
+
+[-] Command: align.seqs	Parameter: gapextend
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: -2	Mothur: -2.0
+
+[-] Command: align.seqs	Parameter: flip
+	[x] Difference in types
+		Galaxy: select	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: true
+
+[-] Command: align.seqs	Parameter: mismatch
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: -1	Mothur: -1.0
+
+[-] Command: align.seqs	Parameter: ksize
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+
+[-] Command: align.seqs	Parameter: align
+	[x] Difference in default values
+		Galaxy: 	Mothur: needleman
+
+[-] Command: align.seqs	Parameter: gapopen
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: -5	Mothur: -5.0
+
+[-] Command: bin.seqs	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: biom.info	Parameter: output
+	[x] Difference in default values
+		Galaxy: 	Mothur: detail
+
+[-] Command: biom.info	Parameter: relabund
+	[x] Difference in default values
+		Galaxy: 	Mothur: false
+
+[-] Command: biom.info	Parameter: label
+	[x] Difference in default values
+		Galaxy: userLabel	Mothur: 
+
+[-] Command: biom.info	Parameter: printlevel
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+
+[-] Command: biom.info	Parameter: basis
+	[x] Difference in default values
+		Galaxy: 	Mothur: otu
+
+[-] Command: chimera.ccode	Parameter: mask
+	[x] Difference in types
+		Galaxy: data	Mothur: text
+
+[-] Command: chimera.ccode	Parameter: window
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: chimera.ccode	Parameter: numwanted
+	[x] Difference in default values
+		Galaxy: 	Mothur: 20
+
+[-] Command: chimera.check	Parameter: svg
+	[x] Difference in types
+		Galaxy: select	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: false
+
+[-] Command: chimera.perseus	Parameter: cutoff
+	[x] Difference in default values
+		Galaxy: 0.50	Mothur: 0.5
+
+[-] Command: chimera.pintail	Parameter: mask
+	[x] Difference in types
+		Galaxy: data	Mothur: text
+
+[-] Command: chimera.pintail	Parameter: window
+	[x] Difference in default values
+		Galaxy: 300	Mothur: 0
+
+[-] Command: chimera.slayer	Parameter: match
+	[x] Difference in default values
+		Galaxy: 5	Mothur: 5.0
+
+[-] Command: chimera.slayer	Parameter: mismatch
+	[x] Difference in default values
+		Galaxy: -4	Mothur: -4.0
+
+[-] Command: chimera.slayer	Parameter: divergence
+	[x] Difference in types
+		Galaxy: float	Mothur: integer
+
+[-] Command: chimera.uchime	Parameter: xa
+	[x] Difference in types
+		Galaxy: float	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 1.0	Mothur: 1
+
+[-] Command: chimera.uchime	Parameter: minh
+	[x] Difference in types
+		Galaxy: float	Mothur: boolean
+
+[-] Command: chimera.uchime	Parameter: queryfract
+	[x] Difference in types
+		Galaxy: float	Mothur: boolean
+
+[-] Command: chimera.uchime	Parameter: mindiv
+	[x] Difference in types
+		Galaxy: float	Mothur: boolean
+
+[-] Command: chimera.uchime	Parameter: abskew
+	[x] Difference in types
+		Galaxy: float	Mothur: text
+
+[-] Command: chimera.uchime	Parameter: dn
+	[x] Difference in types
+		Galaxy: float	Mothur: boolean
+
+[-] Command: chimera.uchime	Parameter: maxlen
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+
+[-] Command: chimera.uchime	Parameter: ucl
+	[x] Difference in types
+		Galaxy: select	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: false
+
+[-] Command: chimera.uchime	Parameter: maxp
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+
+[-] Command: chimera.uchime	Parameter: minlen
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+
+[-] Command: chimera.uchime	Parameter: minchunk
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+
+[-] Command: chimera.uchime	Parameter: chunks
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+
+[-] Command: chimera.uchime	Parameter: xn
+	[x] Difference in types
+		Galaxy: float	Mothur: boolean
+
+[-] Command: chimera.uchime	Parameter: idsmoothwindow
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+
+[-] Command: chimera.vsearch	Parameter: mindiv
+	[x] Difference in types
+		Galaxy: float	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 0.5	Mothur: 0.8
+
+[-] Command: chimera.vsearch	Parameter: abskew
+	[x] Difference in types
+		Galaxy: float	Mothur: text
+
+[-] Command: chimera.vsearch	Parameter: dn
+	[x] Difference in types
+		Galaxy: float	Mothur: boolean
+
+[-] Command: chimera.vsearch	Parameter: mindiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+
+[-] Command: chimera.vsearch	Parameter: minh
+	[x] Difference in types
+		Galaxy: float	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 0.3	Mothur: 0.28
+
+[-] Command: chimera.vsearch	Parameter: xn
+	[x] Difference in types
+		Galaxy: float	Mothur: boolean
+
+[-] Command: chop.seqs	Parameter: numbases
+	[x] Difference in types
+		Galaxy: integer	Mothur: data
+	[x] Difference in default values
+		Galaxy: 10	Mothur: 0
+
+[-] Command: chop.seqs	Parameter: keep
+	[x] Difference in default values
+		Galaxy: 	Mothur: front
+
+[-] Command: classify.otu	Parameter: output
+	[x] Difference in default values
+		Galaxy: 	Mothur: detail
+
+[-] Command: classify.otu	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: classify.otu	Parameter: basis
+	[x] Difference in default values
+		Galaxy: 	Mothur: otu
+
+[-] Command: classify.seqs	Parameter: match
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: 1	Mothur: 1.0
+
+[-] Command: classify.seqs	Parameter: method
+	[x] Difference in default values
+		Galaxy: 	Mothur: wang
+
+[-] Command: classify.seqs	Parameter: search
+	[x] Difference in default values
+		Galaxy: 	Mothur: kmer
+
+[-] Command: classify.seqs	Parameter: mismatch
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: -1	Mothur: -1.0
+
+[-] Command: classify.seqs	Parameter: ksize
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+
+[-] Command: classify.seqs	Parameter: gapextend
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: -1	Mothur: -1.0
+
+[-] Command: classify.seqs	Parameter: gapopen
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: -2	Mothur: -2.0
+
+[-] Command: classify.seqs	Parameter: output
+	[x] Difference in default values
+		Galaxy: 	Mothur: detail
+
+[-] Command: classify.tree	Parameter: cutoff
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+
+[-] Command: clearcut	Parameter: matrixout
+	[x] Difference in types
+		Galaxy: boolean	Mothur: text
+	[x] Difference in default values
+		Galaxy: false	Mothur: 
+
+[-] Command: clearcut	Parameter: ntrees
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+
+[-] Command: clearcut	Parameter: seed
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: cluster	Parameter: initialize
+	[x] Difference in default values
+		Galaxy: 	Mothur: singleton
+
+[-] Command: cluster	Parameter: cutoff
+	[x] Difference in default values
+		Galaxy: 0.3	Mothur: 0.03
+
+[-] Command: cluster	Parameter: method
+	[x] Difference in default values
+		Galaxy: 	Mothur: opti
+
+[-] Command: cluster	Parameter: precision
+	[x] Difference in types
+		Galaxy: select	Mothur: integer
+	[x] Difference in default values
+		Galaxy: 	Mothur: 100
+
+[-] Command: cluster	Parameter: delta
+	[x] Difference in types
+		Galaxy: float	Mothur: select
+
+[-] Command: cluster	Parameter: metric
+	[x] Difference in default values
+		Galaxy: 	Mothur: mcc
+
+[-] Command: cluster.classic	Parameter: method
+	[x] Difference in default values
+		Galaxy: 	Mothur: average
+
+[-] Command: cluster.classic	Parameter: precision
+	[x] Difference in types
+		Galaxy: select	Mothur: integer
+	[x] Difference in default values
+		Galaxy: 	Mothur: 100
+
+[-] Command: cluster.split	Parameter: initialize
+	[x] Difference in default values
+		Galaxy: 	Mothur: singleton
+
+[-] Command: cluster.split	Parameter: cutoff
+	[x] Difference in default values
+		Galaxy: 0.0	Mothur: 0.03
+
+[-] Command: cluster.split	Parameter: method
+	[x] Difference in default values
+		Galaxy: 	Mothur: opti
+
+[-] Command: cluster.split	Parameter: precision
+	[x] Difference in types
+		Galaxy: select	Mothur: integer
+	[x] Difference in default values
+		Galaxy: 	Mothur: 100
+
+[-] Command: cluster.split	Parameter: metric
+	[x] Difference in default values
+		Galaxy: 	Mothur: mcc
+
+[-] Command: collect.shared	Parameter: calc
+	[x] Difference in default values
+		Galaxy: 	Mothur: sharedsobs-sharedchao-sharedace-jabund-sorabund-jclass-sorclass-jest-sorest-thetayc-thetan
+
+[-] Command: collect.shared	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: collect.shared	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: collect.shared	Parameter: freq
+	[x] Difference in default values
+		Galaxy: 	Mothur: 100
+
+[-] Command: collect.single	Parameter: alpha
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1
+
+[-] Command: collect.single	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: collect.single	Parameter: freq
+	[x] Difference in default values
+		Galaxy: 	Mothur: 100
+
+[-] Command: collect.single	Parameter: abund
+	[x] Difference in default values
+		Galaxy: 	Mothur: 10
+
+[-] Command: collect.single	Parameter: calc
+	[x] Difference in default values
+		Galaxy: 	Mothur: sobs-chao-ace-jack-shannon-npshannon-simpson-shannonrange
+
+[-] Command: consensus.seqs	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: consensus.seqs	Parameter: cutoff
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 100
+
+[-] Command: cooccurrence	Parameter: metric
+	[x] Difference in default values
+		Galaxy: 	Mothur: cscore
+
+[-] Command: cooccurrence	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: cooccurrence	Parameter: iters
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1000
+
+[-] Command: cooccurrence	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: cooccurrence	Parameter: matrixmodel
+	[x] Difference in default values
+		Galaxy: 	Mothur: sim2
+
+[-] Command: corr.axes	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: corr.axes	Parameter: numaxes
+	[x] Difference in default values
+		Galaxy: 	Mothur: 3
+
+[-] Command: corr.axes	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: count.groups	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: count.seqs	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: create.database	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: dist.seqs	Parameter: output
+	[x] Difference in default values
+		Galaxy: 	Mothur: column
+
+[-] Command: dist.seqs	Parameter: calc
+	[x] Difference in default values
+		Galaxy: 	Mothur: onegap
+
+[-] Command: dist.shared	Parameter: output
+	[x] Difference in default values
+		Galaxy: 	Mothur: lt
+
+[-] Command: dist.shared	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: dist.shared	Parameter: subsample
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+
+[-] Command: dist.shared	Parameter: mode
+	[x] Difference in default values
+		Galaxy: 	Mothur: average
+
+[-] Command: dist.shared	Parameter: calc
+	[x] Difference in default values
+		Galaxy: 	Mothur: jclass-thetayc
+
+[-] Command: dist.shared	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: fastq.info	Parameter: tdiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+
+[-] Command: fastq.info	Parameter: format
+	[x] Difference in default values
+		Galaxy: 	Mothur: illumina1.8+
+
+[-] Command: fastq.info	Parameter: sdiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+
+[-] Command: fastq.info	Parameter: ldiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+
+[-] Command: fastq.info	Parameter: bdiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+
+[-] Command: fastq.info	Parameter: pdiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+
+[-] Command: filter.seqs	Parameter: soft
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: filter.seqs	Parameter: trump
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: *
+
+[-] Command: filter.shared	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: filter.shared	Parameter: minpercentsamples
+	[x] Difference in default values
+		Galaxy: 0	Mothur: -1
+
+[-] Command: filter.shared	Parameter: rarepercent
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+	[x] Difference in default values
+		Galaxy: 0	Mothur: -1
+
+[-] Command: filter.shared	Parameter: minnumsamples
+	[x] Difference in default values
+		Galaxy: 0	Mothur: -1
+
+[-] Command: filter.shared	Parameter: minabund
+	[x] Difference in default values
+		Galaxy: 0	Mothur: -1
+
+[-] Command: filter.shared	Parameter: minpercent
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+	[x] Difference in default values
+		Galaxy: 0	Mothur: -1
+
+[-] Command: filter.shared	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: filter.shared	Parameter: mintotal
+	[x] Difference in default values
+		Galaxy: 0	Mothur: -1
+
+[-] Command: get.communitytype	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: get.communitytype	Parameter: subsample
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+
+[-] Command: get.communitytype	Parameter: minpartitions
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 5
+
+[-] Command: get.communitytype	Parameter: iters
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1000
+
+[-] Command: get.communitytype	Parameter: method
+	[x] Difference in default values
+		Galaxy: 	Mothur: dmm
+
+[-] Command: get.communitytype	Parameter: maxpartitions
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 100
+
+[-] Command: get.communitytype	Parameter: calc
+	[x] Difference in default values
+		Galaxy: 	Mothur: rjsd
+
+[-] Command: get.communitytype	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: get.communitytype	Parameter: optimizegap
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 3
+
+[-] Command: get.coremicrobiome	Parameter: output
+	[x] Difference in default values
+		Galaxy: 	Mothur: fraction
+
+[-] Command: get.coremicrobiome	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: get.coremicrobiome	Parameter: abundance
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: 	Mothur: -1
+
+[-] Command: get.coremicrobiome	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: get.coremicrobiome	Parameter: samples
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: 	Mothur: -1
+
+[-] Command: get.group	Parameter: shared
+	[x] Difference in default values
+		Galaxy: 	Mothur: current
+
+[-] Command: get.groups	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: get.mimarkspackage	Parameter: package
+	[x] Difference in default values
+		Galaxy: 	Mothur: miscellaneous
+
+[-] Command: get.otulist	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: get.otulist	Parameter: sort
+	[x] Difference in default values
+		Galaxy: 	Mothur: otu
+
+[-] Command: get.oturep	Parameter: cutoff
+	[x] Difference in types
+		Galaxy: float	Mothur: text
+
+[-] Command: get.oturep	Parameter: sorted
+	[x] Difference in default values
+		Galaxy: 	Mothur: none
+
+[-] Command: get.oturep	Parameter: method
+	[x] Difference in default values
+		Galaxy: 	Mothur: distance
+
+[-] Command: get.oturep	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: get.otus	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: get.rabund	Parameter: sorted
+	[x] Difference in default values
+		Galaxy: false	Mothur: true
+
+[-] Command: get.rabund	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: get.relabund	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: get.relabund	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: get.relabund	Parameter: scale
+	[x] Difference in default values
+		Galaxy: 	Mothur: totalgroup
+
+[-] Command: get.sabund	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: get.seqs	Parameter: format
+	[x] Difference in default values
+		Galaxy: 	Mothur: illumina1.8+
+
+[-] Command: get.sharedseqs	Parameter: output
+	[x] Difference in default values
+		Galaxy: 	Mothur: default
+
+[-] Command: get.sharedseqs	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: get.sharedseqs	Parameter: uniquegroups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: get.sharedseqs	Parameter: sharedgroups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: heatmap.bin	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: heatmap.bin	Parameter: numotu
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: heatmap.bin	Parameter: sorted
+	[x] Difference in default values
+		Galaxy: 	Mothur: shared
+
+[-] Command: heatmap.bin	Parameter: scale
+	[x] Difference in default values
+		Galaxy: 	Mothur: log10
+
+[-] Command: heatmap.bin	Parameter: fontsize
+	[x] Difference in default values
+		Galaxy: 	Mothur: 24
+
+[-] Command: heatmap.bin	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: heatmap.sim	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: heatmap.sim	Parameter: fontsize
+	[x] Difference in default values
+		Galaxy: 	Mothur: 24
+
+[-] Command: heatmap.sim	Parameter: calc
+	[x] Difference in default values
+		Galaxy: 	Mothur: jest-thetayc
+
+[-] Command: heatmap.sim	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: homova	Parameter: sets
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: homova	Parameter: iters
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1000
+
+[-] Command: indicator	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: indicator	Parameter: iters
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+
+[-] Command: indicator	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: lefse	Parameter: multiclass
+	[x] Difference in default values
+		Galaxy: 	Mothur: onevall
+
+[-] Command: lefse	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: lefse	Parameter: strict
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: lefse	Parameter: minc
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: 	Mothur: 10
+
+[-] Command: lefse	Parameter: walpha
+	[x] Difference in types
+		Galaxy: float	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0.05
+
+[-] Command: lefse	Parameter: iters
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 30
+
+[-] Command: lefse	Parameter: fboots
+	[x] Difference in types
+		Galaxy: float	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0.67
+
+[-] Command: lefse	Parameter: aalpha
+	[x] Difference in types
+		Galaxy: float	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0.05
+
+[-] Command: lefse	Parameter: lda
+	[x] Difference in types
+		Galaxy: float	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 2.0
+
+[-] Command: libshuff	Parameter: form
+	[x] Difference in default values
+		Galaxy: 	Mothur: integral
+
+[-] Command: libshuff	Parameter: iters
+	[x] Difference in default values
+		Galaxy: 	Mothur: 10000
+
+[-] Command: libshuff	Parameter: step
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0.01
+
+[-] Command: libshuff	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: make.biom	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: make.biom	Parameter: matrixtype
+	[x] Difference in default values
+		Galaxy: 	Mothur: sparse
+
+[-] Command: make.biom	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: make.contigs	Parameter: match
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1.0
+
+[-] Command: make.contigs	Parameter: checkorient
+	[x] Difference in default values
+		Galaxy: false	Mothur: true
+
+[-] Command: make.contigs	Parameter: tdiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: make.contigs	Parameter: mismatch
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: 	Mothur: -1.0
+
+[-] Command: make.contigs	Parameter: ksize
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+
+[-] Command: make.contigs	Parameter: align
+	[x] Difference in default values
+		Galaxy: 	Mothur: needleman
+
+[-] Command: make.contigs	Parameter: bdiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: make.contigs	Parameter: gapextend
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: 	Mothur: -1.0
+
+[-] Command: make.contigs	Parameter: format
+	[x] Difference in default values
+		Galaxy: 	Mothur: illumina1.8+
+
+[-] Command: make.contigs	Parameter: pdiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: make.contigs	Parameter: gapopen
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: 	Mothur: -2.0
+
+[-] Command: make.lefse	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: make.lefse	Parameter: scale
+	[x] Difference in default values
+		Galaxy: 	Mothur: totalgroup
+
+[-] Command: make.lookup	Parameter: barcode
+	[x] Difference in default values
+		Galaxy: 	Mothur: AACCGTGTC
+
+[-] Command: make.lookup	Parameter: threshold
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 10000
+
+[-] Command: make.lookup	Parameter: order
+	[x] Difference in default values
+		Galaxy: 	Mothur: A
+
+[-] Command: make.lookup	Parameter: key
+	[x] Difference in default values
+		Galaxy: 	Mothur: TCAG
+
+[-] Command: make.shared	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: make.shared	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: make.sra	Parameter: platform
+	[x] Difference in default values
+		Galaxy: 	Mothur: _LS454
+
+[-] Command: make.sra	Parameter: libselection
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: make.sra	Parameter: tdiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: make.sra	Parameter: libstrategy
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: make.sra	Parameter: orientation
+	[x] Difference in default values
+		Galaxy: 	Mothur: forward
+
+[-] Command: make.sra	Parameter: instrument
+	[x] Difference in default values
+		Galaxy: 	Mothur: 454_GS
+
+[-] Command: make.sra	Parameter: bdiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: make.sra	Parameter: sdiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: make.sra	Parameter: pdiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: make.sra	Parameter: datatype
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: make.sra	Parameter: libsource
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: make.sra	Parameter: ldiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: mantel	Parameter: iters
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1000
+
+[-] Command: merge.groups	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: merge.groups	Parameter: method
+	[x] Difference in default values
+		Galaxy: 	Mothur: sum
+
+[-] Command: merge.groups	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: merge.taxsummary	Parameter: input
+	[x] Difference in types
+		Galaxy: data	Mothur: text
+
+[-] Command: metastats	Parameter: threshold
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0.05
+
+[-] Command: metastats	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: metastats	Parameter: sets
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: metastats	Parameter: iters
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1000
+
+[-] Command: metastats	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: nmds	Parameter: mindim
+	[x] Difference in default values
+		Galaxy: 	Mothur: 2
+
+[-] Command: nmds	Parameter: iters
+	[x] Difference in default values
+		Galaxy: 	Mothur: 10
+
+[-] Command: nmds	Parameter: maxdim
+	[x] Difference in default values
+		Galaxy: 	Mothur: 2
+
+[-] Command: nmds	Parameter: maxiters
+	[x] Difference in default values
+		Galaxy: 	Mothur: 500
+
+[-] Command: normalize.shared	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: normalize.shared	Parameter: method
+	[x] Difference in default values
+		Galaxy: 	Mothur: totalgroup
+
+[-] Command: normalize.shared	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: otu.association	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: otu.association	Parameter: cutoff
+	[x] Difference in types
+		Galaxy: float	Mothur: data
+	[x] Difference in default values
+		Galaxy: 	Mothur: 10
+
+[-] Command: otu.association	Parameter: method
+	[x] Difference in default values
+		Galaxy: 	Mothur: pearson
+
+[-] Command: otu.association	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: otu.hierarchy	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: pairwise.seqs	Parameter: match
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1.0
+
+[-] Command: pairwise.seqs	Parameter: output
+	[x] Difference in default values
+		Galaxy: 	Mothur: column
+
+[-] Command: pairwise.seqs	Parameter: gapextend
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: 	Mothur: -1.0
+
+[-] Command: pairwise.seqs	Parameter: cutoff
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1.0
+
+[-] Command: pairwise.seqs	Parameter: align
+	[x] Difference in default values
+		Galaxy: 	Mothur: needleman
+
+[-] Command: pairwise.seqs	Parameter: mismatch
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: 	Mothur: -1.0
+
+[-] Command: pairwise.seqs	Parameter: calc
+	[x] Difference in default values
+		Galaxy: 	Mothur: onegap
+
+[-] Command: pairwise.seqs	Parameter: gapopen
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: 	Mothur: -2.0
+
+[-] Command: parsimony	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: pca	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: pca	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: pcr.seqs	Parameter: nomatch
+	[x] Difference in default values
+		Galaxy: 	Mothur: reject
+
+[-] Command: pcr.seqs	Parameter: rdiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: pcr.seqs	Parameter: pdiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: phylo.diversity	Parameter: iters
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1000
+
+[-] Command: phylo.diversity	Parameter: freq
+	[x] Difference in types
+		Galaxy: float	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 100
+
+[-] Command: phylo.diversity	Parameter: sampledepth
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: phylo.diversity	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: phylotype	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: pre.cluster	Parameter: match
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: 1	Mothur: 1.0
+
+[-] Command: pre.cluster	Parameter: gapextend
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: -1	Mothur: -1.0
+
+[-] Command: pre.cluster	Parameter: diffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: data
+
+[-] Command: pre.cluster	Parameter: mismatch
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: -1	Mothur: -1.0
+
+[-] Command: pre.cluster	Parameter: align
+	[x] Difference in default values
+		Galaxy: 	Mothur: needleman
+
+[-] Command: pre.cluster	Parameter: gapopen
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: -2	Mothur: -2.0
+
+[-] Command: primer.design	Parameter: otulabel
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: primer.design	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: primer.design	Parameter: mintm
+	[x] Difference in types
+		Galaxy: integer	Mothur: data
+	[x] Difference in default values
+		Galaxy: 	Mothur: -1
+
+[-] Command: primer.design	Parameter: cutoff
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 100
+
+[-] Command: primer.design	Parameter: maxtm
+	[x] Difference in types
+		Galaxy: integer	Mothur: data
+	[x] Difference in default values
+		Galaxy: 	Mothur: -1
+
+[-] Command: primer.design	Parameter: length
+	[x] Difference in types
+		Galaxy: integer	Mothur: data
+	[x] Difference in default values
+		Galaxy: 	Mothur: 18
+
+[-] Command: primer.design	Parameter: pdiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: rarefaction.shared	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: rarefaction.shared	Parameter: sets
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: rarefaction.shared	Parameter: iters
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1000
+
+[-] Command: rarefaction.shared	Parameter: freq
+	[x] Difference in default values
+		Galaxy: 	Mothur: 100
+
+[-] Command: rarefaction.shared	Parameter: jumble
+	[x] Difference in default values
+		Galaxy: false	Mothur: true
+
+[-] Command: rarefaction.shared	Parameter: calc
+	[x] Difference in default values
+		Galaxy: 	Mothur: sharedobserved
+
+[-] Command: rarefaction.shared	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: rarefaction.single	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: rarefaction.single	Parameter: iters
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1000
+
+[-] Command: rarefaction.single	Parameter: freq
+	[x] Difference in default values
+		Galaxy: 	Mothur: 100
+
+[-] Command: rarefaction.single	Parameter: abund
+	[x] Difference in default values
+		Galaxy: 	Mothur: 10
+
+[-] Command: rarefaction.single	Parameter: calc
+	[x] Difference in default values
+		Galaxy: 	Mothur: sobs
+
+[-] Command: remove.groups	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: remove.lineage	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: remove.otus	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: remove.rare	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: remove.rare	Parameter: nseqs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: remove.rare	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: remove.seqs	Parameter: format
+	[x] Difference in default values
+		Galaxy: 	Mothur: illumina1.8+
+
+[-] Command: rename.seqs	Parameter: delim
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: _
+
+[-] Command: rename.seqs	Parameter: placement
+	[x] Difference in default values
+		Galaxy: 	Mothur: back
+
+[-] Command: screen.seqs	Parameter: criteria
+	[x] Difference in default values
+		Galaxy: -1	Mothur: 90
+
+[-] Command: screen.seqs	Parameter: optimize
+	[x] Difference in default values
+		Galaxy: 	Mothur: none
+
+[-] Command: sens.spec	Parameter: cutoff
+	[x] Difference in default values
+		Galaxy: 	Mothur: -1.00
+
+[-] Command: sens.spec	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: sffinfo	Parameter: tdiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: sffinfo	Parameter: bdiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: sffinfo	Parameter: sdiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: sffinfo	Parameter: ldiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: sffinfo	Parameter: sfftxt
+	[x] Difference in types
+		Galaxy: boolean	Mothur: text
+	[x] Difference in default values
+		Galaxy: false	Mothur: 
+
+[-] Command: sffinfo	Parameter: pdiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: shhh.flows	Parameter: cutoff
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0.01
+
+[-] Command: shhh.flows	Parameter: order
+	[x] Difference in types
+		Galaxy: text	Mothur: select
+	[x] Difference in default values
+		Galaxy: 	Mothur: A
+
+[-] Command: shhh.flows	Parameter: mindelta
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0.000001
+
+[-] Command: shhh.flows	Parameter: maxiter
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1000
+
+[-] Command: shhh.flows	Parameter: sigma
+	[x] Difference in default values
+		Galaxy: 	Mothur: 60
+
+[-] Command: shhh.flows	Parameter: large
+	[x] Difference in default values
+		Galaxy: 	Mothur: -1
+
+[-] Command: shhh.seqs	Parameter: sigma
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0.01
+
+[-] Command: split.abund	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: split.abund	Parameter: cutoff
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: split.abund	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: split.groups	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: sub.sample	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: sub.sample	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: summary.shared	Parameter: output
+	[x] Difference in default values
+		Galaxy: 	Mothur: lt
+
+[-] Command: summary.shared	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: summary.shared	Parameter: subsample
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+
+[-] Command: summary.shared	Parameter: calc
+	[x] Difference in default values
+		Galaxy: 	Mothur: sharedsobs-sharedchao-sharedace-jabund-sorabund-jclass-sorclass-jest-sorest-thetayc-thetan
+
+[-] Command: summary.shared	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: summary.single	Parameter: alpha
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1
+
+[-] Command: summary.single	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: summary.single	Parameter: subsample
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+
+[-] Command: summary.single	Parameter: abund
+	[x] Difference in default values
+		Galaxy: 	Mothur: 10
+
+[-] Command: summary.single	Parameter: calc
+	[x] Difference in default values
+		Galaxy: 	Mothur: sobs-chao-ace-jack-shannon-npshannon-simpson-shannonrange
+
+[-] Command: summary.tax	Parameter: output
+	[x] Difference in default values
+		Galaxy: 	Mothur: detail
+
+[-] Command: summary.tax	Parameter: threshold
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: summary.tax	Parameter: printlevel
+	[x] Difference in types
+		Galaxy: integer	Mothur: select
+
+[-] Command: tree.shared	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: tree.shared	Parameter: subsample
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+
+[-] Command: tree.shared	Parameter: cutoff
+	[x] Difference in default values
+		Galaxy: 	Mothur: 10
+
+[-] Command: tree.shared	Parameter: calc
+	[x] Difference in default values
+		Galaxy: 	Mothur: jclass-thetayc
+
+[-] Command: tree.shared	Parameter: precision
+	[x] Difference in types
+		Galaxy: integer	Mothur: float
+	[x] Difference in default values
+		Galaxy: 	Mothur: 100
+
+[-] Command: tree.shared	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: trim.flows	Parameter: signal
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0.50
+
+[-] Command: trim.flows	Parameter: noise
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0.70
+
+[-] Command: trim.flows	Parameter: maxflows
+	[x] Difference in default values
+		Galaxy: 	Mothur: 450
+
+[-] Command: trim.flows	Parameter: tdiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.flows	Parameter: maxhomop
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 9
+
+[-] Command: trim.flows	Parameter: pdiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.flows	Parameter: sdiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.flows	Parameter: minflows
+	[x] Difference in default values
+		Galaxy: 	Mothur: 450
+
+[-] Command: trim.flows	Parameter: ldiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.flows	Parameter: bdiffs
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.seqs	Parameter: qwindowaverage
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.seqs	Parameter: keepfirst
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.seqs	Parameter: qaverage
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.seqs	Parameter: maxlength
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.seqs	Parameter: maxhomop
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.seqs	Parameter: tdiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.seqs	Parameter: bdiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.seqs	Parameter: maxambig
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: -1
+
+[-] Command: trim.seqs	Parameter: sdiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.seqs	Parameter: qwindowsize
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 50
+
+[-] Command: trim.seqs	Parameter: removelast
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.seqs	Parameter: pdiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.seqs	Parameter: qthreshold
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.seqs	Parameter: rollaverage
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: trim.seqs	Parameter: minlength
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1
+
+[-] Command: trim.seqs	Parameter: qstepsize
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1
+
+[-] Command: trim.seqs	Parameter: qtrim
+	[x] Difference in default values
+		Galaxy: false	Mothur: true
+
+[-] Command: trim.seqs	Parameter: ldiffs
+	[x] Difference in types
+		Galaxy: integer	Mothur: boolean
+	[x] Difference in default values
+		Galaxy: 	Mothur: 0
+
+[-] Command: unifrac.unweighted	Parameter: subsample
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+
+[-] Command: unifrac.unweighted	Parameter: iters
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1000
+
+[-] Command: unifrac.unweighted	Parameter: distance
+	[x] Difference in default values
+		Galaxy: 	Mothur: column
+
+[-] Command: unifrac.unweighted	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: unifrac.unweighted	Parameter: root
+	[x] Difference in default values
+		Galaxy: false	Mothur: 
+
+[-] Command: unifrac.weighted	Parameter: subsample
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+
+[-] Command: unifrac.weighted	Parameter: iters
+	[x] Difference in types
+		Galaxy: integer	Mothur: text
+	[x] Difference in default values
+		Galaxy: 	Mothur: 1000
+
+[-] Command: unifrac.weighted	Parameter: distance
+	[x] Difference in default values
+		Galaxy: 	Mothur: column
+
+[-] Command: unifrac.weighted	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: unifrac.weighted	Parameter: root
+	[x] Difference in default values
+		Galaxy: false	Mothur: 
+
+[-] Command: unique.seqs	Parameter: format
+	[x] Difference in default values
+		Galaxy: 	Mothur: count
+
+[-] Command: venn	Parameter: label
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: venn	Parameter: calc
+	[x] Difference in types
+		Galaxy: select	Mothur: text
+
+[-] Command: venn	Parameter: fontsize
+	[x] Difference in default values
+		Galaxy: 	Mothur: 24
+
+[-] Command: venn	Parameter: abund
+	[x] Difference in default values
+		Galaxy: 	Mothur: 10
+
+[-] Command: venn	Parameter: permute
+	[x] Difference in default values
+		Galaxy: 	Mothur: 4
+
+[-] Command: venn	Parameter: groups
+	[x] Difference in types
+		Galaxy: select	Mothur: text
